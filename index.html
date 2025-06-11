@@ -4,18 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SCSS Capstone</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles/nav/nav.css" />
+    <link rel="stylesheet" href="./styles/common/common.css" />
+    <link rel="stylesheet" href="./styles/home/home.css" />
+    <link rel="stylesheet" href="./styles/progress-bar/progress-bar.css" />
   </head>
   <body>
     <div class="hero-image">
+      <div class="image-layer-container">
+        <img src="./assets/clouds.jpg" alt="Clouds" class="background-img" />
+        <img
+          src="./assets/statue-of-liberty.png"
+          alt="Statue of Liberty"
+          class="foreground-img"
+        />
+      </div>
+
       <header>
-        <div class="image-layer-container">
-          <img src="./assets/clouds.jpg" alt="Clouds" class="background-img" />
-          <img
-            src="./assets/statue-of-liberty.png"
-            alt="Statue of Liberty"
-            class="foreground-img"
-          />
+        <div class="navbar">
+          <div class="hestia">
+            <a href="./index.html">Hestia</a>
+          </div>
+          <nav>
+            <div class="nav-label">
+              <a href="./index.html">HOME</a>
+            </div>
+            <div class="nav-label">
+              <a href="./pages/blog.html">BLOG</a>
+            </div>
+            <div class="nav-label">
+              <a href="./pages/contact.html">CONTACT</a>
+            </div>
+            <div class="nav-label">
+              <a href="./index.html">MORE</a>
+            </div>
+          </nav>
         </div>
       </header>
     </div>
