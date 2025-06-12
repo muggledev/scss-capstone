@@ -1,35 +1,144 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Alumni Sans", sans-serif;
+}
+
+.hero-image {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .image-layer-container {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 800px;
-  height: 500px;
-  overflow: hidden;
+  height: 730px;
+  z-index: 0;
 }
 .image-layer-container .background-img {
   width: 100%;
-  height: auto;
-  display: block;
-  position: relative;
-  z-index: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .image-layer-container .foreground-img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+  max-height: 730px;
+  -o-object-fit: contain;
+     object-fit: contain;
   z-index: 1;
 }
 
-header nav .nav-label:hover {
+header {
+  position: relative;
+  z-index: 2;
+  margin-top: 30px;
+}
+header .navbar {
+  position: relative;
   display: flex;
-  flex-direction: row;
-  background-color: rgba(255, 255, 255, 0.8);
-  transition: 0.3s ease-in;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  z-index: 2;
+}
+header .navbar .hestia a {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
   color: white;
+  margin-left: 40px;
+}
+header .navbar .hestia a:hover {
+  color: rgba(255, 255, 255, 0.7);
+  transition: 0.3s ease-in;
+}
+header .navbar nav {
+  display: flex;
+  gap: 20px;
+}
+header .navbar nav .nav-label {
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+  margin-right: 40px;
+}
+header .navbar nav .nav-label a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  display: inline-block;
+  text-align: center;
+}
+header .navbar nav .nav-label:hover:not(.more-link)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: -1;
+  border-radius: 3px;
+  transition: background-color 0.3s ease-in;
+}
+header .navbar nav .more-link {
+  background-color: rgb(251, 1, 113);
+  padding: 15px 30px;
+  border-radius: 30px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: 40px;
+}
+header .navbar nav .more-link:hover {
+  box-shadow: 0 0 10px rgb(130, 15, 67);
+  transition: box-shadow 0.3s ease-in;
+}
+
+.hero-image-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hero-image-text .welcome-text {
+  font-size: 5.625rem;
+  text-align: center;
+  margin-top: -90px;
+  margin-bottom: 22px;
+}
+.hero-image-text .lorem-phrase {
+  font-size: 1.875rem;
+  text-align: center;
+  margin-bottom: 62px;
+}
+.hero-image-text .see-more-link {
+  background-color: rgb(251, 1, 113);
+  padding: 15px 30px;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: box-shadow 0.3s ease-in;
 }/*# sourceMappingURL=main.css.map */

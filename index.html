@@ -4,43 +4,91 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SCSS Capstone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Caveat:wght@400..700&family=Road+Rage&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./styles/nav/nav.css" />
     <link rel="stylesheet" href="./styles/common/common.css" />
     <link rel="stylesheet" href="./styles/home/home.css" />
     <link rel="stylesheet" href="./styles/progress-bar/progress-bar.css" />
   </head>
   <body>
-    <div class="hero-image">
-      <div class="image-layer-container">
-        <img src="./assets/clouds.jpg" alt="Clouds" class="background-img" />
-        <img
-          src="./assets/statue-of-liberty.png"
-          alt="Statue of Liberty"
-          class="foreground-img"
-        />
-      </div>
-
-      <header>
-        <div class="navbar">
-          <div class="hestia">
-            <a href="./index.html">Hestia</a>
-          </div>
-          <nav>
-            <div class="nav-label">
-              <a href="./index.html">HOME</a>
-            </div>
-            <div class="nav-label">
-              <a href="./pages/blog.html">BLOG</a>
-            </div>
-            <div class="nav-label">
-              <a href="./pages/contact.html">CONTACT</a>
-            </div>
-            <div class="nav-label">
-              <a href="./index.html">MORE</a>
-            </div>
-          </nav>
+    <div class="page-container">
+      <div class="hero-image">
+        <div class="image-layer-container">
+          <img src="./assets/clouds.jpg" alt="Clouds" class="background-img" />
+          <img
+            src="./assets/statue-of-liberty.png"
+            alt="Statue of Liberty"
+            class="foreground-img"
+          />
         </div>
-      </header>
+
+        <header>
+          <div class="navbar">
+            <div class="hestia">
+              <a href="./index.html">Hestia</a>
+            </div>
+            <nav>
+              <div class="nav-label">
+                <a href="./index.html">HOME</a>
+              </div>
+              <div class="nav-label">
+                <a href="./pages/blog.html">BLOG</a>
+              </div>
+              <div class="nav-label">
+                <a href="./pages/contact.html">CONTACT</a>
+              </div>
+              <div>
+                <a href="./index.html" class="more-link">MORE</a>
+              </div>
+            </nav>
+          </div>
+        </header>
+        <div class="hero-image-text">
+          <div class="welcome-text">
+            <span>Welcome to Hestia!</span>
+          </div>
+          <div class="lorem-phrase">
+            <span>Lorem ipsum dolor sit amet</span>
+          </div>
+          <div>
+            <a href="./index.html" class="see-more-link">SEE MORE</a>
+          </div>
+        </div>
+      </div>
+      <main>
+        <div class="main-container">
+          <div class="page-description">
+            <h1>What we stand for</h1>
+            <div class="grids">
+              <div class="pink-grid">
+                <img
+                  src="https://wp-themes.com/wp-content/themes/hestia/assets/img/feat1.png"
+                  alt="Pink Grid"
+                />
+              </div>
+              <div class="blue-grid">
+                <img
+                  src="https://wp-themes.com/wp-content/themes/hestia/assets/img/feat2.png"
+                  alt="Blue Grid"
+                />
+              </div>
+              <div class="green-lines">
+                <img
+                  src="https://wp-themes.com/wp-content/themes/hestia/assets/img/feat3.png"
+                  alt="Green Lines"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
   </body>
 </html>
