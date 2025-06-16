@@ -4,6 +4,9 @@
   font-family: "Alumni Sans", sans-serif;
 }
 
+$darkgray: rgb(74, 74, 87);
+$lightergray: rgb(173, 173, 173);
+
 .page-container {
   background-color: rgba(0, 0, 0, 0.2);
 
@@ -114,19 +117,19 @@
           }
         }
         a:nth-of-type(2) {
-          color: rgb(74, 74, 87);
+          color: $darkgray;
           font-weight: 550;
           font-size: 26px;
         }
         p {
           font-size: 14px;
-          color: rgb(173, 173, 173);
+          color: $lightergray;
         }
         p:nth-of-type(2) {
-          color: rgb(74, 74, 87);
+          color: $darkgray;
 
           a:first-of-type {
-            color: rgb(74, 74, 87);
+            color: $darkgray;
             font-weight: 600;
             font-size: 15px;
             &:hover {
@@ -162,13 +165,13 @@
           }
         }
         a:nth-of-type(2) {
-          color: rgb(74, 74, 87);
+          color: $darkgray;
           font-weight: 550;
           font-size: 26px;
         }
         p {
           font-size: 14px;
-          color: rgb(173, 173, 173);
+          color: $lightergray;
 
           a {
             font-size: 14px;
@@ -177,10 +180,10 @@
           }
         }
         p:nth-of-type(2) {
-          color: rgb(74, 74, 87);
+          color: $darkgray;
 
           a:first-of-type {
-            color: rgb(74, 74, 87);
+            color: $darkgray;
             font-weight: 600;
             font-size: 15px;
             &:hover {
@@ -216,19 +219,19 @@
           }
         }
         a:nth-of-type(2) {
-          color: rgb(74, 74, 87);
+          color: $darkgray;
           font-weight: 550;
           font-size: 26px;
         }
         p {
           font-size: 14px;
-          color: rgb(173, 173, 173);
+          color: $lightergray;
         }
         p:nth-of-type(2) {
-          color: rgb(74, 74, 87);
+          color: $darkgray;
 
           a:first-of-type {
-            color: rgb(74, 74, 87);
+            color: $darkgray;
             font-weight: 600;
             font-size: 15px;
             &:hover {
@@ -264,13 +267,13 @@
           }
         }
         a:nth-of-type(2) {
-          color: rgb(74, 74, 87);
+          color: $darkgray;
           font-weight: 550;
           font-size: 26px;
         }
         p {
           font-size: 14px;
-          color: rgb(173, 173, 173);
+          color: $lightergray;
 
           a {
             font-size: 14px;
@@ -279,10 +282,10 @@
           }
         }
         p:nth-of-type(2) {
-          color: rgb(74, 74, 87);
+          color: $darkgray;
 
           a:first-of-type {
-            color: rgb(74, 74, 87);
+            color: $darkgray;
             font-weight: 600;
             font-size: 15px;
             &:hover {
@@ -318,19 +321,19 @@
           }
         }
         a:nth-of-type(2) {
-          color: rgb(74, 74, 87);
+          color: $darkgray;
           font-weight: 550;
           font-size: 26px;
         }
         p {
           font-size: 14px;
-          color: rgb(173, 173, 173);
+          color: $lightergray;
         }
         p:nth-of-type(2) {
-          color: rgb(74, 74, 87);
+          color: $darkgray;
 
           a:first-of-type {
-            color: rgb(74, 74, 87);
+            color: $darkgray;
             font-weight: 600;
             font-size: 15px;
             &:hover {
@@ -369,13 +372,13 @@
 
         // Second main heading link
         a:nth-of-type(2) {
-          color: rgb(74, 74, 87);
+          color: $darkgray;
           font-weight: 550;
           font-size: 26px;
           text-decoration: none;
         }
 
-        // "Read more..." link (4th <a>)
+        // "Read more..." link (3rd <a>)
         a:nth-of-type(3) {
           font-size: 14px;
           font-weight: 400;
@@ -390,14 +393,14 @@
 
         p {
           font-size: 14px;
-          color: rgb(173, 173, 173);
+          color: $lightergray;
         }
 
         p:nth-of-type(2) {
-          color: rgb(74, 74, 87);
+          color: $darkgray;
 
           a:first-of-type {
-            color: rgb(74, 74, 87);
+            color: $darkgray;
             font-weight: 600;
             font-size: 15px;
 
@@ -437,19 +440,19 @@
           }
         }
         a:nth-of-type(2) {
-          color: rgb(74, 74, 87);
+          color: $darkgray;
           font-weight: 550;
           font-size: 26px;
         }
         p {
           font-size: 14px;
-          color: rgb(173, 173, 173);
+          color: $lightergray;
         }
         p:nth-of-type(2) {
-          color: rgb(74, 74, 87);
+          color: $darkgray;
 
           a:first-of-type {
-            color: rgb(74, 74, 87);
+            color: $darkgray;
             font-weight: 600;
             font-size: 15px;
             &:hover {

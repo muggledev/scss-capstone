@@ -1,33 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../styles/contact.css">
-</head>
-<body>
-  <div class="page-container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="page-container">
       <header>
         <div class="navbar">
           <div class="hestia">
-            <a href="./index.html">Hestia</a>
+            <a href="../index.html">Hestia</a>
           </div>
           <nav>
             <div class="nav-label">
-              <a href="./index.html">HOME</a>
+              <a href="../index.html">HOME</a>
             </div>
             <div class="nav-label">
-              <a href="./pages/blog.html">BLOG</a>
+              <a href="../pages/blog.html">BLOG</a>
             </div>
             <div class="nav-label">
-              <a href="./pages/contact.html">CONTACT</a>
+              <a href="../pages/contact.html">CONTACT</a>
             </div>
             <div>
-              <a href="./index.html" class="more-link">MORE</a>
+              <a href="../index.html" class="more-link">MORE</a>
             </div>
           </nav>
         </div>
       </header>
-</body>
+      <div class="google-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.1777121966848!2d26.090168276219188!3d44.45002707107554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff5499e689fd%3A0x95e65f458e5adf5f!2s20%2C%20Strada%20Povernei%2020%2C%20Bucure%C8%99ti%2C%20Romania!5e0!3m2!1sen!2sus!4v1750104592260!5m2!1sen!2sus"
+          width="100%"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <main>
+        <div class="contact-grid">
+          <div class="left-column">
+            <h1>Send us a message</h1>
+            <div class="form">
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="firstname"
+                  id="fname"
+                  placeholder="Your first name.."
+                />
+              </div>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lname"
+                  placeholder="Your last name.."
+                />
+              </div>
+              <div class="input-wrapper">
+                <textarea
+                  name="subject"
+                  id="subject"
+                  placeholder="Write something.."
+                ></textarea>
+              </div>
+              <input type="submit" value="Submit" />
+            </div>
+          </div>
+
+          <div class="contact-info">
+            <div class="map">
+              <div class="info-block">
+                <div class="header-line">
+                  <i class="fa-solid fa-map"></i>
+                  <h2>Find us at the office</h2>
+                </div>
+                <p>Strada Povernei, nr 20 <br />Bucharest <br />Romania</p>
+              </div>
+            </div>
+            <div class="phone">
+              <div class="info-block">
+                <div class="header-line">
+                  <i class="fa-solid fa-phone-flip"></i>
+                  <h2>Give us a ring</h2>
+                </div>
+                <p>
+                  John Doe <br />+40 712 345 678 <br />Mon - Fri, 8:00-22:00
+                </p>
+              </div>
+            </div>
+            <div class="brief-case">
+              <div class="info-block">
+                <div class="header-line">
+                  <i class="fa-solid fa-briefcase"></i>
+                  <h2>Legal information</h2>
+                </div>
+                <p>John Doe Co. <br />Fiscal Code: 12345678</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-links">
+          <a href="">ABOUT</a>
+          <a href="">PARENT PAGE</a>
+        </div>
+        <p>Hesita | Developed by <a href="">Themelsle</a></p>
+      </footer>
+    </div>
+  </body>
 </html>
