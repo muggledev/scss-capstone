@@ -204,4 +204,33 @@
       }
     }
   }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(42, 42, 42);
+    color: lightgray;
+    padding: 40px;
+    font-size: 18px;
+
+    a {
+      color: lightgray;
+      text-decoration: none;
+      margin-right: 20px;
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.6);
+        transition: 0.2s ease-in;
+      }
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
 }

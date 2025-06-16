@@ -4,73 +4,252 @@
   font-family: "Alumni Sans", sans-serif;
 }
 
-.hero-image {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
+.page-container {
+  background-color: rgba(0, 0, 0, 0.2);
 }
-
-.image-layer-container {
+.page-container .main-container {
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  border-radius: 8px;
+  width: 97.5%;
+  margin: 0 auto;
+  margin-top: -60px;
+}
+.page-container .main-container h1 {
+  text-align: center;
+  font-size: 50px;
+  padding: 30px;
+  margin-bottom: 70px;
+  color: rgb(74, 74, 87);
+}
+.page-container .main-container .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 130px;
+}
+.page-container .main-container .icons p {
+  color: rgb(173, 173, 173);
+  font-size: 19px;
+}
+.page-container .main-container .grid-overlay {
+  position: relative;
+  display: grid;
+  place-items: center;
+  background-image: url(../../assets/purple-mountains.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 80px 40px;
+  z-index: 0;
+}
+.page-container .main-container .grid-overlay::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 730px;
-  z-index: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
 }
-.image-layer-container .background-img {
+.page-container .main-container .grid-overlay .grid-content {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+}
+.page-container .main-container .grid-overlay .grid-content .text-block h2 {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.page-container .main-container .grid-overlay .grid-content .text-block p {
+  color: white;
+  font-size: 23px;
+  line-height: 1.5;
+}
+.page-container .main-container .grid-overlay .grid-content img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.page-container .main-container .blog-section h1 {
+  text-align: center;
+  margin-top: 60px;
+}
+.page-container .main-container .blog-section .blog-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 120px;
+}
+.page-container .main-container .blog-section .blog-text .purple h2 {
+  color: rgb(133, 0, 133);
+  font-weight: 400;
+  font-size: larger;
+}
+.page-container .main-container .blog-section .blog-text .purple a {
+  text-decoration: none;
+  font-size: 27px;
+  font-weight: 600;
+  color: rgb(74, 74, 87);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.page-container .main-container .blog-section .blog-text .purple p {
+  font-size: 19px;
+  color: rgb(173, 173, 173);
+}
+.page-container .main-container .blog-section .blog-text .blue h2 {
+  color: rgb(15, 214, 225);
+  font-weight: 400;
+  font-size: larger;
+}
+.page-container .main-container .blog-section .blog-text .blue a {
+  text-decoration: none;
+  font-size: 27px;
+  font-weight: 600;
+  color: rgb(74, 74, 87);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.page-container .main-container .blog-section .blog-text .blue p {
+  font-size: 19px;
+  color: rgb(173, 173, 173);
+}
+.page-container .main-container .blog-section .blog-text .blue p a {
+  font-size: 19px;
+  font-weight: 400;
+  color: rgb(31, 71, 130);
+  line-height: 0;
+}
+.page-container .main-container .blog-section .blog-text .red-orange h2 {
+  color: rgb(255, 47, 0);
+  font-weight: 400;
+  font-size: larger;
+}
+.page-container .main-container .blog-section .blog-text .red-orange a {
+  text-decoration: none;
+  font-size: 27px;
+  font-weight: 600;
+  color: rgb(74, 74, 87);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.page-container .main-container .blog-section .blog-text .red-orange p {
+  font-size: 19px;
+  color: rgb(173, 173, 173);
+}
+.page-container .main-container .contact-info {
+  position: relative;
+  background-image: url(../../assets/purple-mountains.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 40px;
+  z-index: 0;
+  overflow: hidden;
+}
+.page-container .main-container .contact-info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.page-container .main-container .contact-info > * {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: left;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Alumni Sans", sans-serif;
+}
+
+.page-container {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.page-container .hero-image {
+  height: 100vh;
+  overflow: hidden;
+}
+.page-container .hero-image .image-layer-container {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.page-container .hero-image .image-layer-container .background-img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.image-layer-container .foreground-img {
+.page-container .hero-image .image-layer-container .foreground-img {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 100%;
-  max-height: 730px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  min-height: 730px;
   z-index: 1;
 }
-
-header {
+.page-container header {
   position: relative;
   z-index: 2;
   margin-top: 30px;
 }
-header .navbar {
+.page-container header .navbar {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 40px;
-  z-index: 2;
 }
-header .navbar .hestia a {
+.page-container header .navbar .hestia a {
   font-weight: bold;
   font-size: 1.5rem;
   text-decoration: none;
   color: white;
   margin-left: 40px;
 }
-header .navbar .hestia a:hover {
+.page-container header .navbar .hestia a:hover {
   color: rgba(255, 255, 255, 0.7);
   transition: 0.3s ease-in;
 }
-header .navbar nav {
+.page-container header .navbar nav {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   gap: 20px;
 }
-header .navbar nav .nav-label {
+.page-container header .navbar nav .nav-label {
   position: relative;
-  display: inline-block;
   z-index: 0;
   margin-right: 40px;
 }
-header .navbar nav .nav-label a {
+.page-container header .navbar nav .nav-label a {
   text-decoration: none;
   color: white;
   font-weight: bold;
@@ -79,7 +258,7 @@ header .navbar nav .nav-label a {
   display: inline-block;
   text-align: center;
 }
-header .navbar nav .nav-label:hover:not(.more-link)::before {
+.page-container header .navbar nav .nav-label:hover:not(.more-link)::before {
   content: "";
   position: absolute;
   top: 0;
@@ -90,52 +269,47 @@ header .navbar nav .nav-label:hover:not(.more-link)::before {
   border-radius: 3px;
   transition: background-color 0.3s ease-in;
 }
-header .navbar nav .more-link {
+.page-container header .navbar nav .more-link {
   background-color: rgb(251, 1, 113);
   padding: 15px 30px;
   border-radius: 30px;
-  display: inline-block;
   text-decoration: none;
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
   margin-right: 40px;
 }
-header .navbar nav .more-link:hover {
+.page-container header .navbar nav .more-link:hover {
   box-shadow: 0 0 10px rgb(130, 15, 67);
   transition: box-shadow 0.3s ease-in;
 }
-
-.hero-image-text {
+.page-container .hero-image-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   color: white;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.hero-image-text .welcome-text {
+.page-container .hero-image-text .welcome-text {
   font-size: 5.625rem;
   text-align: center;
-  margin-top: -90px;
   margin-bottom: 22px;
 }
-.hero-image-text .lorem-phrase {
+.page-container .hero-image-text .lorem-phrase {
   font-size: 1.875rem;
   text-align: center;
   margin-bottom: 62px;
 }
-.hero-image-text .see-more-link {
+.page-container .hero-image-text .see-more-link {
   background-color: rgb(251, 1, 113);
   padding: 15px 30px;
   border-radius: 5px;
-  display: inline-block;
   text-decoration: none;
   color: white;
   font-weight: bold;

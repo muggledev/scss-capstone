@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Alumni Sans", sans-serif;
+}
+
+header .navbar {
+  background-color: white;
+  padding: 20px 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .navbar .hestia a {
+  color: #686868;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+header .navbar .hestia a:hover {
+  color: #999898;
+  transition: 0.2s ease-in;
+}
+header .navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header .navbar nav .nav-label a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.8rem;
+  padding: 10px 15px;
+  display: inline-block;
+  border-radius: 3px;
+  color: #686868;
+}
+header .navbar nav .nav-label a:hover {
+  color: rgb(255, 79, 158);
+  transition: 0.2s ease-in;
+}
+header .navbar nav .nav-label:nth-child(2) a {
+  color: #fb0171;
+}
+header .navbar nav .nav-label:nth-child(2) a:hover {
+  color: rgb(255, 79, 158);
+  transition: 0.2s ease-in;
+}
+header .navbar nav .more-link {
+  background-color: #fb0171;
+  color: white;
+  padding: 18px 22px;
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+header .navbar nav .more-link:hover {
+  box-shadow: 0 0 10px rgba(251, 1, 113, 0.4);
+}/*# sourceMappingURL=blog.css.map */
