@@ -4,70 +4,499 @@
   font-family: "Alumni Sans", sans-serif;
 }
 
-header {
-  .navbar {
-    background-color: white;
-    padding: 20px 55px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.page-container {
+  background-color: rgba(0, 0, 0, 0.2);
 
-    .hestia a {
-      color: #686868;
-      font-weight: 400;
-      font-size: 1.2rem;
-      text-decoration: none;
-
-      &:hover {
-        color: #999898;
-        transition: 0.2s ease-in;
-      }
-    }
-
-    nav {
+  header {
+    .navbar {
+      background-color: white;
+      padding: 20px 55px;
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      gap: 20px;
 
-      .nav-label {
-        a {
-          text-decoration: none;
-          font-weight: 400;
-          font-size: 0.8rem;
-          padding: 10px 15px;
-          display: inline-block;
-          border-radius: 3px;
-          color: #686868;
+      .hestia a {
+        color: #686868;
+        font-weight: 400;
+        font-size: 1.2rem;
+        text-decoration: none;
 
-          &:hover {
+        &:hover {
+          color: #999898;
+          transition: 0.2s ease-in;
+        }
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .nav-label {
+          a {
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 0.8rem;
+            padding: 10px 15px;
+            display: inline-block;
+            border-radius: 3px;
+            color: #686868;
+
+            &:hover {
+              color: rgb(255, 79, 158);
+              transition: 0.2s ease-in;
+            }
+          }
+
+          &:nth-child(2) a {
+            color: #ee227e;
+          }
+
+          &:nth-child(2) a:hover {
             color: rgb(255, 79, 158);
             transition: 0.2s ease-in;
           }
         }
 
-        &:nth-child(2) a {
-          color: #fb0171;
-        }
+        .more-link {
+          background-color: #ee227e;
+          color: white;
+          padding: 18px 22px;
+          border-radius: 30px;
+          font-weight: 400;
+          font-size: 0.8rem;
+          text-decoration: none;
 
-        &:nth-child(2) a:hover {
-          color: rgb(255, 79, 158);
-          transition: 0.2s ease-in;
-        }
-      }
-
-      .more-link {
-        background-color: #fb0171;
-        color: white;
-        padding: 18px 22px;
-        border-radius: 30px;
-        font-weight: 400;
-        font-size: 0.8rem;
-        text-decoration: none;
-
-        &:hover {
-          box-shadow: 0 0 10px rgba(251, 1, 113, 0.4);
+          &:hover {
+            box-shadow: 0 0 10px rgba(251, 1, 113, 0.4);
+          }
         }
       }
+    }
+  }
+
+  .hero-text {
+    background: linear-gradient(to right, #b72492, #ee227e);
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 160px;
+  }
+
+  // **************MAIN CONTAINER****************
+  .main-container {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    border-radius: 8px;
+    width: 97.5%;
+    margin: 0 auto;
+    margin-top: -60px;
+
+    .main-text {
+      .thousand-words {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        padding-left: 130px;
+        gap: 15px;
+
+        a {
+          color: rgb(133, 0, 133);
+          text-decoration: none;
+          font-weight: 200;
+          font-size: 13px;
+
+          &:hover {
+            color: rgb(185, 28, 185);
+          }
+        }
+        a:nth-of-type(2) {
+          color: rgb(74, 74, 87);
+          font-weight: 550;
+          font-size: 26px;
+        }
+        p {
+          font-size: 14px;
+          color: rgb(173, 173, 173);
+        }
+        p:nth-of-type(2) {
+          color: rgb(74, 74, 87);
+
+          a:first-of-type {
+            color: rgb(74, 74, 87);
+            font-weight: 600;
+            font-size: 15px;
+            &:hover {
+              color: #858585;
+              transition: 0.2s ease-in;
+            }
+          }
+          a:last-of-type {
+            font-weight: 300;
+            font-size: 15px;
+            &:hover {
+              color: #858585;
+              transition: 0.2s ease-in;
+            }
+          }
+        }
+      }
+      .elements {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        padding-left: 130px;
+        gap: 15px;
+
+        a {
+          color: rgb(15, 214, 225);
+          text-decoration: none;
+          font-weight: 200;
+          font-size: 13px;
+
+          &:hover {
+            color: rgb(107, 228, 234);
+          }
+        }
+        a:nth-of-type(2) {
+          color: rgb(74, 74, 87);
+          font-weight: 550;
+          font-size: 26px;
+        }
+        p {
+          font-size: 14px;
+          color: rgb(173, 173, 173);
+
+          a {
+            font-size: 14px;
+            font-weight: 400;
+            color: rgb(31, 71, 130);
+          }
+        }
+        p:nth-of-type(2) {
+          color: rgb(74, 74, 87);
+
+          a:first-of-type {
+            color: rgb(74, 74, 87);
+            font-weight: 600;
+            font-size: 15px;
+            &:hover {
+              color: #858585;
+              transition: 0.2s ease-in;
+            }
+          }
+          a:last-of-type {
+            font-weight: 300;
+            font-size: 15px;
+            &:hover {
+              color: #858585;
+              transition: 0.2s ease-in;
+            }
+          }
+        }
+      }
+      .more-tags {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        padding-left: 130px;
+        gap: 15px;
+
+        a {
+          color: rgb(255, 47, 0);
+          text-decoration: none;
+          font-weight: 200;
+          font-size: 13px;
+
+          &:hover {
+            color: rgb(251, 108, 76);
+          }
+        }
+        a:nth-of-type(2) {
+          color: rgb(74, 74, 87);
+          font-weight: 550;
+          font-size: 26px;
+        }
+        p {
+          font-size: 14px;
+          color: rgb(173, 173, 173);
+        }
+        p:nth-of-type(2) {
+          color: rgb(74, 74, 87);
+
+          a:first-of-type {
+            color: rgb(74, 74, 87);
+            font-weight: 600;
+            font-size: 15px;
+            &:hover {
+              color: #858585;
+              transition: 0.2s ease-in;
+            }
+          }
+          a:last-of-type {
+            font-weight: 300;
+            font-size: 15px;
+            &:hover {
+              color: #858585;
+              transition: 0.2s ease-in;
+            }
+          }
+        }
+      }
+      .html {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        padding-left: 130px;
+        gap: 15px;
+
+        a {
+          color: rgb(250, 155, 1);
+          text-decoration: none;
+          font-weight: 200;
+          font-size: 13px;
+
+          &:hover {
+            color: rgb(250, 182, 72);
+          }
+        }
+        a:nth-of-type(2) {
+          color: rgb(74, 74, 87);
+          font-weight: 550;
+          font-size: 26px;
+        }
+        p {
+          font-size: 14px;
+          color: rgb(173, 173, 173);
+
+          a {
+            font-size: 14px;
+            font-weight: 400;
+            color: rgb(31, 71, 130);
+          }
+        }
+        p:nth-of-type(2) {
+          color: rgb(74, 74, 87);
+
+          a:first-of-type {
+            color: rgb(74, 74, 87);
+            font-weight: 600;
+            font-size: 15px;
+            &:hover {
+              color: #858585;
+              transition: 0.2s ease-in;
+            }
+          }
+          a:last-of-type {
+            font-weight: 300;
+            font-size: 15px;
+            &:hover {
+              color: #858585;
+              transition: 0.2s ease-in;
+            }
+          }
+        }
+      }
+      .links {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        padding-left: 130px;
+        gap: 15px;
+
+        a {
+          color: rgb(236, 19, 116);
+          text-decoration: none;
+          font-weight: 200;
+          font-size: 13px;
+
+          &:hover {
+            color: rgb(236, 92, 157);
+          }
+        }
+        a:nth-of-type(2) {
+          color: rgb(74, 74, 87);
+          font-weight: 550;
+          font-size: 26px;
+        }
+        p {
+          font-size: 14px;
+          color: rgb(173, 173, 173);
+        }
+        p:nth-of-type(2) {
+          color: rgb(74, 74, 87);
+
+          a:first-of-type {
+            color: rgb(74, 74, 87);
+            font-weight: 600;
+            font-size: 15px;
+            &:hover {
+              color: #858585;
+              transition: 0.2s ease-in;
+            }
+          }
+          a:last-of-type {
+            font-weight: 300;
+            font-size: 15px;
+            &:hover {
+              color: #858585;
+              transition: 0.2s ease-in;
+            }
+          }
+        }
+      }
+      .category-hierarchy {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        padding-left: 130px;
+        gap: 15px;
+
+        // First green link
+        a:first-of-type {
+          color: rgb(52, 164, 65);
+          text-decoration: none;
+          font-weight: 200;
+          font-size: 13px;
+
+          &:hover {
+            color: rgb(117, 216, 128);
+          }
+        }
+
+        // Second main heading link
+        a:nth-of-type(2) {
+          color: rgb(74, 74, 87);
+          font-weight: 550;
+          font-size: 26px;
+          text-decoration: none;
+        }
+
+        // "Read more..." link (4th <a>)
+        a:nth-of-type(3) {
+          font-size: 14px;
+          font-weight: 400;
+          color: rgb(31, 71, 130);
+          text-decoration: none;
+          line-height: 0;
+
+          &:hover {
+            color: #4e6fa7;
+          }
+        }
+
+        p {
+          font-size: 14px;
+          color: rgb(173, 173, 173);
+        }
+
+        p:nth-of-type(2) {
+          color: rgb(74, 74, 87);
+
+          a:first-of-type {
+            color: rgb(74, 74, 87);
+            font-weight: 600;
+            font-size: 15px;
+
+            &:hover {
+              color: #858585;
+              transition: 0.2s ease-in;
+            }
+          }
+
+          a:last-of-type {
+            font-weight: 300;
+            font-size: 15px;
+
+            &:hover {
+              color: #858585;
+              transition: 0.2s ease-in;
+            }
+          }
+        }
+      }
+      .hello-world {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        padding-left: 130px;
+        padding-bottom: 100px;
+        gap: 15px;
+
+        a {
+          color: rgb(133, 0, 133);
+          text-decoration: none;
+          font-weight: 200;
+          font-size: 13px;
+
+          &:hover {
+            color: rgb(185, 28, 185);
+          }
+        }
+        a:nth-of-type(2) {
+          color: rgb(74, 74, 87);
+          font-weight: 550;
+          font-size: 26px;
+        }
+        p {
+          font-size: 14px;
+          color: rgb(173, 173, 173);
+        }
+        p:nth-of-type(2) {
+          color: rgb(74, 74, 87);
+
+          a:first-of-type {
+            color: rgb(74, 74, 87);
+            font-weight: 600;
+            font-size: 15px;
+            &:hover {
+              color: #858585;
+              transition: 0.2s ease-in;
+            }
+          }
+          a:last-of-type {
+            font-weight: 300;
+            font-size: 15px;
+            &:hover {
+              color: #858585;
+              transition: 0.2s ease-in;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(42, 42, 42);
+    color: lightgray;
+    padding: 40px;
+    font-size: 14px;
+
+    a {
+      color: lightgray;
+      text-decoration: none;
+      margin-right: 20px;
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.6);
+        transition: 0.2s ease-in;
+      }
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      font-size: 12px;
+    }
+
+    p {
+      margin: 0;
     }
   }
 }

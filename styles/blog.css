@@ -4,29 +4,32 @@
   font-family: "Alumni Sans", sans-serif;
 }
 
-header .navbar {
+.page-container {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.page-container header .navbar {
   background-color: white;
   padding: 20px 55px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .navbar .hestia a {
+.page-container header .navbar .hestia a {
   color: #686868;
   font-weight: 400;
   font-size: 1.2rem;
   text-decoration: none;
 }
-header .navbar .hestia a:hover {
+.page-container header .navbar .hestia a:hover {
   color: #999898;
   transition: 0.2s ease-in;
 }
-header .navbar nav {
+.page-container header .navbar nav {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-header .navbar nav .nav-label a {
+.page-container header .navbar nav .nav-label a {
   text-decoration: none;
   font-weight: 400;
   font-size: 0.8rem;
@@ -35,19 +38,19 @@ header .navbar nav .nav-label a {
   border-radius: 3px;
   color: #686868;
 }
-header .navbar nav .nav-label a:hover {
+.page-container header .navbar nav .nav-label a:hover {
   color: rgb(255, 79, 158);
   transition: 0.2s ease-in;
 }
-header .navbar nav .nav-label:nth-child(2) a {
-  color: #fb0171;
+.page-container header .navbar nav .nav-label:nth-child(2) a {
+  color: #ee227e;
 }
-header .navbar nav .nav-label:nth-child(2) a:hover {
+.page-container header .navbar nav .nav-label:nth-child(2) a:hover {
   color: rgb(255, 79, 158);
   transition: 0.2s ease-in;
 }
-header .navbar nav .more-link {
-  background-color: #fb0171;
+.page-container header .navbar nav .more-link {
+  background-color: #ee227e;
   color: white;
   padding: 18px 22px;
   border-radius: 30px;
@@ -55,6 +58,387 @@ header .navbar nav .more-link {
   font-size: 0.8rem;
   text-decoration: none;
 }
-header .navbar nav .more-link:hover {
+.page-container header .navbar nav .more-link:hover {
   box-shadow: 0 0 10px rgba(251, 1, 113, 0.4);
+}
+.page-container .hero-text {
+  background: linear-gradient(to right, #b72492, #ee227e);
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 160px;
+}
+.page-container .main-container {
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  border-radius: 8px;
+  width: 97.5%;
+  margin: 0 auto;
+  margin-top: -60px;
+}
+.page-container .main-container .main-text .thousand-words {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-left: 130px;
+  gap: 15px;
+}
+.page-container .main-container .main-text .thousand-words a {
+  color: rgb(133, 0, 133);
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 13px;
+}
+.page-container .main-container .main-text .thousand-words a:hover {
+  color: rgb(185, 28, 185);
+}
+.page-container .main-container .main-text .thousand-words a:nth-of-type(2) {
+  color: rgb(74, 74, 87);
+  font-weight: 550;
+  font-size: 26px;
+}
+.page-container .main-container .main-text .thousand-words p {
+  font-size: 14px;
+  color: rgb(173, 173, 173);
+}
+.page-container .main-container .main-text .thousand-words p:nth-of-type(2) {
+  color: rgb(74, 74, 87);
+}
+.page-container .main-container .main-text .thousand-words p:nth-of-type(2) a:first-of-type {
+  color: rgb(74, 74, 87);
+  font-weight: 600;
+  font-size: 15px;
+}
+.page-container .main-container .main-text .thousand-words p:nth-of-type(2) a:first-of-type:hover {
+  color: #858585;
+  transition: 0.2s ease-in;
+}
+.page-container .main-container .main-text .thousand-words p:nth-of-type(2) a:last-of-type {
+  font-weight: 300;
+  font-size: 15px;
+}
+.page-container .main-container .main-text .thousand-words p:nth-of-type(2) a:last-of-type:hover {
+  color: #858585;
+  transition: 0.2s ease-in;
+}
+.page-container .main-container .main-text .elements {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-left: 130px;
+  gap: 15px;
+}
+.page-container .main-container .main-text .elements a {
+  color: rgb(15, 214, 225);
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 13px;
+}
+.page-container .main-container .main-text .elements a:hover {
+  color: rgb(107, 228, 234);
+}
+.page-container .main-container .main-text .elements a:nth-of-type(2) {
+  color: rgb(74, 74, 87);
+  font-weight: 550;
+  font-size: 26px;
+}
+.page-container .main-container .main-text .elements p {
+  font-size: 14px;
+  color: rgb(173, 173, 173);
+}
+.page-container .main-container .main-text .elements p a {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(31, 71, 130);
+}
+.page-container .main-container .main-text .elements p:nth-of-type(2) {
+  color: rgb(74, 74, 87);
+}
+.page-container .main-container .main-text .elements p:nth-of-type(2) a:first-of-type {
+  color: rgb(74, 74, 87);
+  font-weight: 600;
+  font-size: 15px;
+}
+.page-container .main-container .main-text .elements p:nth-of-type(2) a:first-of-type:hover {
+  color: #858585;
+  transition: 0.2s ease-in;
+}
+.page-container .main-container .main-text .elements p:nth-of-type(2) a:last-of-type {
+  font-weight: 300;
+  font-size: 15px;
+}
+.page-container .main-container .main-text .elements p:nth-of-type(2) a:last-of-type:hover {
+  color: #858585;
+  transition: 0.2s ease-in;
+}
+.page-container .main-container .main-text .more-tags {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-left: 130px;
+  gap: 15px;
+}
+.page-container .main-container .main-text .more-tags a {
+  color: rgb(255, 47, 0);
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 13px;
+}
+.page-container .main-container .main-text .more-tags a:hover {
+  color: rgb(251, 108, 76);
+}
+.page-container .main-container .main-text .more-tags a:nth-of-type(2) {
+  color: rgb(74, 74, 87);
+  font-weight: 550;
+  font-size: 26px;
+}
+.page-container .main-container .main-text .more-tags p {
+  font-size: 14px;
+  color: rgb(173, 173, 173);
+}
+.page-container .main-container .main-text .more-tags p:nth-of-type(2) {
+  color: rgb(74, 74, 87);
+}
+.page-container .main-container .main-text .more-tags p:nth-of-type(2) a:first-of-type {
+  color: rgb(74, 74, 87);
+  font-weight: 600;
+  font-size: 15px;
+}
+.page-container .main-container .main-text .more-tags p:nth-of-type(2) a:first-of-type:hover {
+  color: #858585;
+  transition: 0.2s ease-in;
+}
+.page-container .main-container .main-text .more-tags p:nth-of-type(2) a:last-of-type {
+  font-weight: 300;
+  font-size: 15px;
+}
+.page-container .main-container .main-text .more-tags p:nth-of-type(2) a:last-of-type:hover {
+  color: #858585;
+  transition: 0.2s ease-in;
+}
+.page-container .main-container .main-text .html {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-left: 130px;
+  gap: 15px;
+}
+.page-container .main-container .main-text .html a {
+  color: rgb(250, 155, 1);
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 13px;
+}
+.page-container .main-container .main-text .html a:hover {
+  color: rgb(250, 182, 72);
+}
+.page-container .main-container .main-text .html a:nth-of-type(2) {
+  color: rgb(74, 74, 87);
+  font-weight: 550;
+  font-size: 26px;
+}
+.page-container .main-container .main-text .html p {
+  font-size: 14px;
+  color: rgb(173, 173, 173);
+}
+.page-container .main-container .main-text .html p a {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(31, 71, 130);
+}
+.page-container .main-container .main-text .html p:nth-of-type(2) {
+  color: rgb(74, 74, 87);
+}
+.page-container .main-container .main-text .html p:nth-of-type(2) a:first-of-type {
+  color: rgb(74, 74, 87);
+  font-weight: 600;
+  font-size: 15px;
+}
+.page-container .main-container .main-text .html p:nth-of-type(2) a:first-of-type:hover {
+  color: #858585;
+  transition: 0.2s ease-in;
+}
+.page-container .main-container .main-text .html p:nth-of-type(2) a:last-of-type {
+  font-weight: 300;
+  font-size: 15px;
+}
+.page-container .main-container .main-text .html p:nth-of-type(2) a:last-of-type:hover {
+  color: #858585;
+  transition: 0.2s ease-in;
+}
+.page-container .main-container .main-text .links {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-left: 130px;
+  gap: 15px;
+}
+.page-container .main-container .main-text .links a {
+  color: rgb(236, 19, 116);
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 13px;
+}
+.page-container .main-container .main-text .links a:hover {
+  color: rgb(236, 92, 157);
+}
+.page-container .main-container .main-text .links a:nth-of-type(2) {
+  color: rgb(74, 74, 87);
+  font-weight: 550;
+  font-size: 26px;
+}
+.page-container .main-container .main-text .links p {
+  font-size: 14px;
+  color: rgb(173, 173, 173);
+}
+.page-container .main-container .main-text .links p:nth-of-type(2) {
+  color: rgb(74, 74, 87);
+}
+.page-container .main-container .main-text .links p:nth-of-type(2) a:first-of-type {
+  color: rgb(74, 74, 87);
+  font-weight: 600;
+  font-size: 15px;
+}
+.page-container .main-container .main-text .links p:nth-of-type(2) a:first-of-type:hover {
+  color: #858585;
+  transition: 0.2s ease-in;
+}
+.page-container .main-container .main-text .links p:nth-of-type(2) a:last-of-type {
+  font-weight: 300;
+  font-size: 15px;
+}
+.page-container .main-container .main-text .links p:nth-of-type(2) a:last-of-type:hover {
+  color: #858585;
+  transition: 0.2s ease-in;
+}
+.page-container .main-container .main-text .category-hierarchy {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-left: 130px;
+  gap: 15px;
+}
+.page-container .main-container .main-text .category-hierarchy a:first-of-type {
+  color: rgb(52, 164, 65);
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 13px;
+}
+.page-container .main-container .main-text .category-hierarchy a:first-of-type:hover {
+  color: rgb(117, 216, 128);
+}
+.page-container .main-container .main-text .category-hierarchy a:nth-of-type(2) {
+  color: rgb(74, 74, 87);
+  font-weight: 550;
+  font-size: 26px;
+  text-decoration: none;
+}
+.page-container .main-container .main-text .category-hierarchy a:nth-of-type(3) {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(31, 71, 130);
+  text-decoration: none;
+  line-height: 0;
+}
+.page-container .main-container .main-text .category-hierarchy a:nth-of-type(3):hover {
+  color: #4e6fa7;
+}
+.page-container .main-container .main-text .category-hierarchy p {
+  font-size: 14px;
+  color: rgb(173, 173, 173);
+}
+.page-container .main-container .main-text .category-hierarchy p:nth-of-type(2) {
+  color: rgb(74, 74, 87);
+}
+.page-container .main-container .main-text .category-hierarchy p:nth-of-type(2) a:first-of-type {
+  color: rgb(74, 74, 87);
+  font-weight: 600;
+  font-size: 15px;
+}
+.page-container .main-container .main-text .category-hierarchy p:nth-of-type(2) a:first-of-type:hover {
+  color: #858585;
+  transition: 0.2s ease-in;
+}
+.page-container .main-container .main-text .category-hierarchy p:nth-of-type(2) a:last-of-type {
+  font-weight: 300;
+  font-size: 15px;
+}
+.page-container .main-container .main-text .category-hierarchy p:nth-of-type(2) a:last-of-type:hover {
+  color: #858585;
+  transition: 0.2s ease-in;
+}
+.page-container .main-container .main-text .hello-world {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-left: 130px;
+  padding-bottom: 100px;
+  gap: 15px;
+}
+.page-container .main-container .main-text .hello-world a {
+  color: rgb(133, 0, 133);
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 13px;
+}
+.page-container .main-container .main-text .hello-world a:hover {
+  color: rgb(185, 28, 185);
+}
+.page-container .main-container .main-text .hello-world a:nth-of-type(2) {
+  color: rgb(74, 74, 87);
+  font-weight: 550;
+  font-size: 26px;
+}
+.page-container .main-container .main-text .hello-world p {
+  font-size: 14px;
+  color: rgb(173, 173, 173);
+}
+.page-container .main-container .main-text .hello-world p:nth-of-type(2) {
+  color: rgb(74, 74, 87);
+}
+.page-container .main-container .main-text .hello-world p:nth-of-type(2) a:first-of-type {
+  color: rgb(74, 74, 87);
+  font-weight: 600;
+  font-size: 15px;
+}
+.page-container .main-container .main-text .hello-world p:nth-of-type(2) a:first-of-type:hover {
+  color: #858585;
+  transition: 0.2s ease-in;
+}
+.page-container .main-container .main-text .hello-world p:nth-of-type(2) a:last-of-type {
+  font-weight: 300;
+  font-size: 15px;
+}
+.page-container .main-container .main-text .hello-world p:nth-of-type(2) a:last-of-type:hover {
+  color: #858585;
+  transition: 0.2s ease-in;
+}
+.page-container footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(42, 42, 42);
+  color: lightgray;
+  padding: 40px;
+  font-size: 14px;
+}
+.page-container footer a {
+  color: lightgray;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.page-container footer a:hover {
+  color: rgba(255, 255, 255, 0.6);
+  transition: 0.2s ease-in;
+}
+.page-container footer .footer-links {
+  display: flex;
+  gap: 20px;
+  font-size: 12px;
+}
+.page-container footer p {
+  margin: 0;
 }/*# sourceMappingURL=blog.css.map */
