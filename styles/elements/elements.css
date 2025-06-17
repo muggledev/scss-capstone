@@ -4,6 +4,15 @@
   font-family: "Alumni Sans", sans-serif;
 }
 
+.top-link {
+  color: #ee227e;
+  text-decoration: none;
+}
+.top-link:hover {
+  color: rgb(255, 79, 158);
+  transition: 0.2s ease-in;
+}
+
 .page-container {
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -14,7 +23,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 0;
 }
 .page-container header .navbar .hestia a {
   color: #686868;
@@ -44,9 +52,6 @@
   color: rgb(255, 79, 158);
   transition: 0.2s ease-in;
 }
-.page-container header .navbar nav .nav-label:nth-child(2) a {
-  color: #ee227e;
-}
 .page-container header .navbar nav .nav-label:nth-child(2) a:hover {
   color: rgb(255, 79, 158);
   transition: 0.2s ease-in;
@@ -70,7 +75,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0;
   color: white;
   padding: 160px;
   text-align: center;
@@ -98,7 +102,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 0;
   background-color: white;
   border-radius: 8px;
   width: 97.5%;
@@ -123,23 +126,213 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: left;
-  gap: 0;
+  align-items: flex-start;
   gap: 25px;
 }
-.page-container .main-container .content .headings-list a {
+.page-container .main-container .content .headings-list .top-link {
   color: #ee227e;
 }
-.page-container .main-container .content .headings-list a:hover {
+.page-container .main-container .content .headings-list .top-link:hover {
   color: rgb(255, 79, 158);
   transition: 0.2s ease-in;
 }
-.page-container .main-container .content .paragraph {
+.page-container .main-container .paragraph {
+  max-width: 685px;
+  width: 100%;
+}
+.page-container .main-container .paragraph .section-title {
+  padding: 20px 0;
+  font-size: 40px;
+}
+.page-container .main-container .paragraph p {
+  font-size: 20px;
+}
+.page-container .main-container .paragraph .test-link {
+  color: #ee227e;
+  text-decoration: none;
+}
+.page-container .main-container .paragraph .test-link:hover {
+  color: rgb(255, 79, 158);
+  transition: 0.2s ease-in;
+}
+.page-container .main-container .paragraph .top-link {
+  color: #ee227e;
+  text-decoration: none;
+  font-size: 15px;
+}
+.page-container .main-container .paragraph .top-link:hover {
+  color: rgb(255, 79, 158);
+  transition: 0.2s ease-in;
+}
+.page-container .main-container .lists {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: left;
-  gap: 0;
-  max-width: 900px;
+  gap: 20px;
+  max-width: 685px;
   width: 100%;
+}
+.page-container .main-container .lists .ordered-list {
+  margin-left: 35px;
+}
+.page-container .main-container .lists .unordered-list {
+  margin-left: 35px;
+}
+.page-container .main-container .form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 685px;
+  width: 100%;
+}
+.page-container .main-container .form-field .form-heading {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.page-container .main-container .form-field input[type=text],
+.page-container .main-container .form-field textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  padding: 10px 5px;
+  font-size: 14px;
+  color: rgb(74, 74, 87);
+  outline: none;
+}
+.page-container .main-container .form-field input[type=text]:focus,
+.page-container .main-container .form-field textarea:focus {
+  border-bottom: 1px solid #ee227e;
+}
+.page-container .main-container .form-field select {
+  padding: 15px 5px;
+  font-size: 18px;
+}
+.page-container .main-container .form-field .radio-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.page-container .main-container .form-field .radio-buttons .radio-option {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.page-container .main-container .form-field .check-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.page-container .main-container .form-field .check-boxes .checkbox-option {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.page-container .main-container .form-field .password-field label {
+  font-weight: 800;
+}
+.page-container .main-container .form-field .choose-file {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.page-container .main-container .form-field .choose-file label {
+  font-weight: 800;
+}
+.page-container .main-container .form-field .form-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+.page-container .main-container .form-field .form-buttons button {
+  padding: 18px 32px;
+  border-radius: 3px;
+  font-weight: 400;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 20px;
+}
+.page-container .main-container .form-field .form-buttons .submit-button {
+  background-color: #ee227e;
+  color: white;
+}
+.page-container .main-container .form-field .form-buttons .submit-button:hover {
+  box-shadow: 0 0 10px rgba(251, 1, 113, 0.4);
+}
+.page-container .main-container .form-field .form-buttons .clear-button {
+  background-color: #e0e0e0;
+  color: rgb(74, 74, 87);
+}
+.page-container .main-container .form-field .form-buttons .clear-button:hover {
+  color: white;
+}
+.page-container .main-container .table {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 685px;
+  width: 100%;
+}
+.page-container .main-container .table h1 {
+  margin-top: 40px;
+}
+.page-container .main-container .table .main-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #4a4a57;
+}
+.page-container .main-container .table .main-table th,
+.page-container .main-container .table .main-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+.page-container .main-container .table .main-table thead th {
+  font-weight: 600;
+  border-bottom: 2px solid #ccc;
+}
+.page-container .main-container .stuff {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 685px;
+  width: 100%;
+}
+.page-container .main-container .stuff .stuff-paragraph {
+  font-size: 20px;
+}
+.page-container .main-container .stuff .scroll-box {
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color: #f2f2f2;
+  padding: 16px;
+  border-radius: 6px;
+  font-family: sans-serif;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+.page-container .main-container .stuff .quote-box {
+  border-left: 4px solid #d3d3d3;
+  padding-left: 16px;
+  margin: 20px 0;
+  color: #555;
+  font-style: italic;
+  font-size: 20px;
+}
+.page-container .main-container .stuff .quote-text {
+  margin-bottom: 10px;
+}
+.page-container .main-container .stuff .quote-author {
+  margin: 0;
+  font-style: normal;
+  color: #777;
+}
+.page-container .main-container .stuff .top-link {
+  margin-bottom: 40px;
 }/*# sourceMappingURL=elements.css.map */

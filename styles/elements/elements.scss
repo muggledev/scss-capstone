@@ -3,7 +3,6 @@
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
-  gap: $gap;
 }
 
 * {
@@ -65,10 +64,6 @@ $lightergray: rgb(173, 173, 173);
               color: rgb(255, 79, 158);
               transition: 0.2s ease-in;
             }
-          }
-
-          &:nth-child(2) a {
-            color: #ee227e;
           }
 
           &:nth-child(2) a:hover {
@@ -155,7 +150,7 @@ $lightergray: rgb(173, 173, 173);
         @include flexbox(column, flex-start, flex-start);
         gap: 25px;
 
-        a {
+        .top-link {
           color: #ee227e;
 
           &:hover {
@@ -166,11 +161,20 @@ $lightergray: rgb(173, 173, 173);
       }
     }
     .paragraph {
-      @include flexbox(column, flex-start, flex-start);
-      max-width: 900px;
+      // @include flexbox(column, flex-start, flex-start);
+      max-width: 685px;
       width: 100%;
 
-      .top-link {
+      .section-title {
+        padding: 20px 0;
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      .test-link {
         color: #ee227e;
         text-decoration: none;
 
@@ -178,6 +182,209 @@ $lightergray: rgb(173, 173, 173);
           color: rgb(255, 79, 158);
           transition: 0.2s ease-in;
         }
+      }
+      .top-link {
+        color: #ee227e;
+        text-decoration: none;
+        font-size: 15px;
+
+        &:hover {
+          color: rgb(255, 79, 158);
+          transition: 0.2s ease-in;
+        }
+      }
+    }
+
+    .lists {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 685px;
+      width: 100%;
+
+      .ordered-list {
+        margin-left: 35px;
+      }
+      .unordered-list {
+        margin-left: 35px;
+      }
+    }
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 685px;
+      width: 100%;
+
+      .form-heading {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      input[type="text"],
+      textarea {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        background: transparent;
+        padding: 10px 5px;
+        font-size: 14px;
+        color: rgb(74, 74, 87);
+        outline: none;
+
+        &:focus {
+          border-bottom: 1px solid #ee227e;
+        }
+      }
+      select {
+        padding: 15px 5px;
+        font-size: 18px;
+      }
+      .radio-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .radio-option {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 4px;
+        }
+      }
+      .check-boxes {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .checkbox-option {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 4px;
+        }
+      }
+      .password-field {
+        label {
+          font-weight: 800;
+        }
+      }
+      .choose-file {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+
+        label {
+          font-weight: 800;
+        }
+      }
+      .form-buttons {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .form-buttons button {
+        padding: 18px 32px;
+        border-radius: 3px;
+        font-weight: 400;
+        font-size: 0.8rem;
+        cursor: pointer;
+        border: none;
+        transition: all 0.2s ease-in-out;
+        margin-bottom: 20px;
+      }
+
+      .form-buttons .submit-button {
+        background-color: #ee227e;
+        color: white;
+      }
+
+      .form-buttons .submit-button:hover {
+        box-shadow: 0 0 10px rgba(251, 1, 113, 0.4);
+      }
+
+      .form-buttons .clear-button {
+        background-color: #e0e0e0;
+        color: rgb(74, 74, 87);
+      }
+
+      .form-buttons .clear-button:hover {
+        color: white;
+      }
+    }
+
+    .table {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 685px;
+      width: 100%;
+      h1 {
+        margin-top: 40px;
+      }
+      .main-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        font-size: 18px;
+        color: #4a4a57;
+      }
+
+      .main-table th,
+      .main-table td {
+        padding: 12px 16px;
+        text-align: left;
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      .main-table thead th {
+        font-weight: 600;
+        border-bottom: 2px solid #ccc;
+      }
+    }
+    .stuff {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 685px;
+      width: 100%;
+
+      .stuff-paragraph {
+        font-size: 20px;
+      }
+
+      .scroll-box {
+        overflow-x: auto;
+        white-space: nowrap;
+        background-color: #f2f2f2;
+        padding: 16px;
+        border-radius: 6px;
+        font-family: sans-serif;
+        font-size: 14px;
+        border: 1px solid #ccc;
+      }
+
+      .quote-box {
+        border-left: 4px solid #d3d3d3;
+        padding-left: 16px;
+        margin: 20px 0;
+        color: #555;
+        font-style: italic;
+        font-size: 20px;
+      }
+
+      .quote-text {
+        margin-bottom: 10px;
+      }
+
+      .quote-author {
+        margin: 0;
+        font-style: normal;
+        color: #777;
+      }
+      .top-link {
+        margin-bottom: 40px;
       }
     }
   }
