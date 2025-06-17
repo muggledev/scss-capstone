@@ -1,3 +1,11 @@
+@mixin flexbox($direction: row, $justify: center, $align: center, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,9 +22,7 @@ $lightergray: rgb(173, 173, 173);
     .navbar {
       background-color: white;
       padding: 20px 55px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @include flexbox(row, space-between, center);
 
       .hestia a {
         color: #686868;
@@ -81,9 +87,7 @@ $lightergray: rgb(173, 173, 173);
   .hero-text {
     background: linear-gradient(to right, #b72492, #ee227e);
     font-size: x-large;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox();
     color: white;
     padding: 160px;
   }
@@ -100,11 +104,9 @@ $lightergray: rgb(173, 173, 173);
 
     .main-text {
       .thousand-words {
-        display: flex;
-        flex-direction: column;
+        @include flexbox(column, flex-start, flex-start, 15px);
         padding-top: 100px;
         padding-left: 130px;
-        gap: 15px;
 
         a {
           color: rgb(133, 0, 133);
@@ -148,11 +150,9 @@ $lightergray: rgb(173, 173, 173);
         }
       }
       .elements {
-        display: flex;
-        flex-direction: column;
+        @include flexbox(column, flex-start, flex-start, 15px);
         padding-top: 100px;
         padding-left: 130px;
-        gap: 15px;
 
         a {
           color: rgb(15, 214, 225);
@@ -202,11 +202,9 @@ $lightergray: rgb(173, 173, 173);
         }
       }
       .more-tags {
-        display: flex;
-        flex-direction: column;
+        @include flexbox(column, flex-start, flex-start, 15px);
         padding-top: 100px;
         padding-left: 130px;
-        gap: 15px;
 
         a {
           color: rgb(255, 47, 0);
@@ -250,11 +248,9 @@ $lightergray: rgb(173, 173, 173);
         }
       }
       .html {
-        display: flex;
-        flex-direction: column;
+        @include flexbox(column, flex-start, flex-start, 15px);
         padding-top: 100px;
         padding-left: 130px;
-        gap: 15px;
 
         a {
           color: rgb(250, 155, 1);
@@ -304,11 +300,9 @@ $lightergray: rgb(173, 173, 173);
         }
       }
       .links {
-        display: flex;
-        flex-direction: column;
+        @include flexbox(column, flex-start, flex-start, 15px);
         padding-top: 100px;
         padding-left: 130px;
-        gap: 15px;
 
         a {
           color: rgb(236, 19, 116);
@@ -352,11 +346,9 @@ $lightergray: rgb(173, 173, 173);
         }
       }
       .category-hierarchy {
-        display: flex;
-        flex-direction: column;
+        @include flexbox(column, flex-start, flex-start, 15px);
         padding-top: 100px;
         padding-left: 130px;
-        gap: 15px;
 
         // First green link
         a:first-of-type {
@@ -422,12 +414,10 @@ $lightergray: rgb(173, 173, 173);
         }
       }
       .hello-world {
-        display: flex;
-        flex-direction: column;
+        @include flexbox(column, flex-start, flex-start, 15px);
         padding-top: 100px;
         padding-left: 130px;
         padding-bottom: 100px;
-        gap: 15px;
 
         a {
           color: rgb(133, 0, 133);

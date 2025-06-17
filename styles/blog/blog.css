@@ -11,8 +11,10 @@
   background-color: white;
   padding: 20px 55px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 0;
 }
 .page-container header .navbar .hestia a {
   color: #686868;
@@ -65,8 +67,10 @@
   background: linear-gradient(to right, #b72492, #ee227e);
   font-size: x-large;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 0;
   color: white;
   padding: 160px;
 }
@@ -82,9 +86,11 @@
 .page-container .main-container .main-text .thousand-words {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
   padding-top: 100px;
   padding-left: 130px;
-  gap: 15px;
 }
 .page-container .main-container .main-text .thousand-words a {
   color: rgb(133, 0, 133);
@@ -127,9 +133,11 @@
 .page-container .main-container .main-text .elements {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
   padding-top: 100px;
   padding-left: 130px;
-  gap: 15px;
 }
 .page-container .main-container .main-text .elements a {
   color: rgb(15, 214, 225);
@@ -177,9 +185,11 @@
 .page-container .main-container .main-text .more-tags {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
   padding-top: 100px;
   padding-left: 130px;
-  gap: 15px;
 }
 .page-container .main-container .main-text .more-tags a {
   color: rgb(255, 47, 0);
@@ -222,9 +232,11 @@
 .page-container .main-container .main-text .html {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
   padding-top: 100px;
   padding-left: 130px;
-  gap: 15px;
 }
 .page-container .main-container .main-text .html a {
   color: rgb(250, 155, 1);
@@ -272,9 +284,11 @@
 .page-container .main-container .main-text .links {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
   padding-top: 100px;
   padding-left: 130px;
-  gap: 15px;
 }
 .page-container .main-container .main-text .links a {
   color: rgb(236, 19, 116);
@@ -317,9 +331,11 @@
 .page-container .main-container .main-text .category-hierarchy {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
   padding-top: 100px;
   padding-left: 130px;
-  gap: 15px;
 }
 .page-container .main-container .main-text .category-hierarchy a:first-of-type {
   color: rgb(52, 164, 65);
@@ -373,10 +389,12 @@
 .page-container .main-container .main-text .hello-world {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
   padding-top: 100px;
   padding-left: 130px;
   padding-bottom: 100px;
-  gap: 15px;
 }
 .page-container .main-container .main-text .hello-world a {
   color: rgb(133, 0, 133);

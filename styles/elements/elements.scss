@@ -1,0 +1,184 @@
+@mixin flexbox($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Alumni Sans", sans-serif;
+}
+
+$darkgray: rgb(74, 74, 87);
+$lightergray: rgb(173, 173, 173);
+
+.top-link {
+  color: #ee227e;
+  text-decoration: none;
+
+  &:hover {
+    color: rgb(255, 79, 158);
+    transition: 0.2s ease-in;
+  }
+}
+
+.page-container {
+  background-color: rgba(0, 0, 0, 0.2);
+
+  header {
+    .navbar {
+      background-color: white;
+      padding: 20px 55px;
+      @include flexbox(row, space-between, center);
+
+      .hestia a {
+        color: #686868;
+        font-weight: 400;
+        font-size: 1.2rem;
+        text-decoration: none;
+
+        &:hover {
+          color: #999898;
+          transition: 0.2s ease-in;
+        }
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .nav-label {
+          a {
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 0.8rem;
+            padding: 10px 15px;
+            display: inline-block;
+            border-radius: 3px;
+            color: #686868;
+
+            &:hover {
+              color: rgb(255, 79, 158);
+              transition: 0.2s ease-in;
+            }
+          }
+
+          &:nth-child(2) a {
+            color: #ee227e;
+          }
+
+          &:nth-child(2) a:hover {
+            color: rgb(255, 79, 158);
+            transition: 0.2s ease-in;
+          }
+        }
+
+        .more-link {
+          background-color: #ee227e;
+          color: white;
+          padding: 18px 22px;
+          border-radius: 30px;
+          font-weight: 400;
+          font-size: 0.8rem;
+          text-decoration: none;
+
+          &:hover {
+            box-shadow: 0 0 10px rgba(251, 1, 113, 0.4);
+          }
+        }
+      }
+    }
+  }
+
+  .hero-text {
+    background: linear-gradient(to right, #b72492, #ee227e);
+    font-size: x-large;
+    @include flexbox(column);
+    color: white;
+    padding: 160px;
+    text-align: center;
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 200;
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+
+        &:hover {
+          color: $lightergray;
+          transition: ease-in 0.2s;
+        }
+      }
+    }
+  }
+
+  // **************MAIN CONTAINER****************
+  .main-container {
+    position: relative;
+    z-index: 2;
+    @include flexbox(column, flex-start);
+    background-color: white;
+    border-radius: 8px;
+    width: 97.5%;
+    margin: 0 auto;
+    margin-top: -60px;
+    color: $darkgray;
+
+    .content {
+      .description {
+        font-size: 20px;
+        font-weight: 200;
+        margin-top: 90px;
+        max-width: 900px;
+        width: 100%;
+      }
+
+      .divider-sm {
+        border: none;
+        height: 1px;
+        background-color: #d7d7d7;
+        margin: 20px 0;
+      }
+
+      .headings-list {
+        @include flexbox(column, flex-start, flex-start);
+        gap: 25px;
+
+        a {
+          color: #ee227e;
+
+          &:hover {
+            color: rgb(255, 79, 158);
+            transition: 0.2s ease-in;
+          }
+        }
+      }
+    }
+    .paragraph {
+      @include flexbox(column, flex-start, flex-start);
+      max-width: 900px;
+      width: 100%;
+
+      .top-link {
+        color: #ee227e;
+        text-decoration: none;
+
+        &:hover {
+          color: rgb(255, 79, 158);
+          transition: 0.2s ease-in;
+        }
+      }
+    }
+  }
+}
