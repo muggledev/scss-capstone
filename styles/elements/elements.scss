@@ -131,35 +131,77 @@ $lightergray: rgb(173, 173, 173);
     position: relative;
     z-index: 2;
     @include flexbox(column, flex-start);
-    background-color: white;
-    border-radius: 8px;
-    width: 97.5%;
+    width: 100%;
     margin: 0 auto;
     margin-top: -60px;
     color: $darkgray;
+    padding-left: 0;
+    padding-right: 0;
 
-    .content {
-      .description {
-        font-size: 20px;
-        font-weight: 200;
-        margin-top: 90px;
-        max-width: 900px;
+    .white-content {
+      background-color: white;
+      border-radius: 8px;
+      @include flexbox(column, flex-start);
+      width: 97.5%;
+
+      .content {
+        .description {
+          font-size: 20px;
+          font-weight: 200;
+          margin-top: 90px;
+          max-width: 900px;
+          width: 100%;
+        }
+
+        .divider-sm {
+          border: none;
+          height: 1px;
+          background-color: #d7d7d7;
+          margin: 20px 0;
+        }
+
+        .headings-list {
+          @include flexbox(column, flex-start, flex-start);
+          gap: 25px;
+
+          .top-link {
+            color: #ee227e;
+
+            &:hover {
+              color: rgb(255, 79, 158);
+              transition: 0.2s ease-in;
+            }
+          }
+        }
+      }
+      .paragraph {
+        // @include flexbox(column, flex-start, flex-start);
+        max-width: 685px;
         width: 100%;
-      }
 
-      .divider-sm {
-        border: none;
-        height: 1px;
-        background-color: #d7d7d7;
-        margin: 20px 0;
-      }
+        .section-title {
+          padding: 20px 0;
+          font-size: 40px;
+        }
 
-      .headings-list {
-        @include flexbox(column, flex-start, flex-start);
-        gap: 25px;
+        p {
+          font-size: 20px;
+        }
 
+        .test-link {
+          color: #ee227e;
+          text-decoration: none;
+
+          &:hover {
+            color: rgb(255, 79, 158);
+            transition: 0.2s ease-in;
+          }
+        }
         .top-link {
           color: #ee227e;
+          text-decoration: none;
+          font-size: 15px;
+          line-height: 50px;
 
           &:hover {
             color: rgb(255, 79, 158);
@@ -167,278 +209,243 @@ $lightergray: rgb(173, 173, 173);
           }
         }
       }
-    }
-    .paragraph {
-      // @include flexbox(column, flex-start, flex-start);
-      max-width: 685px;
-      width: 100%;
 
-      .section-title {
-        padding: 20px 0;
-        font-size: 40px;
-      }
+      .lists {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 685px;
+        width: 100%;
 
-      p {
-        font-size: 20px;
-      }
+        .section-title {
+          margin-top: 30px;
+        }
 
-      .test-link {
-        color: #ee227e;
-        text-decoration: none;
+        .list-subtitle {
+          font-weight: bold;
+        }
 
-        &:hover {
-          color: rgb(255, 79, 158);
-          transition: 0.2s ease-in;
+        .ordered-list {
+          margin-left: 35px;
+        }
+        .unordered-list {
+          margin-left: 35px;
         }
       }
-      .top-link {
-        color: #ee227e;
-        text-decoration: none;
-        font-size: 15px;
-        line-height: 50px;
 
-        &:hover {
-          color: rgb(255, 79, 158);
-          transition: 0.2s ease-in;
+      .forms {
+        margin-left: -30px;
+
+        .section-title {
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+
+        .form-legend {
+          font-size: 23px;
+        }
+        .form-field {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          max-width: 685px;
+          width: 100%;
+
+          .form-heading {
+            margin-top: 20px;
+            margin-bottom: 20px;
+          }
+          input[type="text"],
+          textarea {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            background: transparent;
+            padding: 10px 5px;
+            font-size: 14px;
+            color: rgb(74, 74, 87);
+            outline: none;
+
+            &:focus {
+              border-bottom: 1px solid #ee227e;
+            }
+          }
+          select {
+            padding: 15px 5px;
+            font-size: 18px;
+          }
+          .radio-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .radio-option {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 4px;
+            }
+          }
+          .check-boxes {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .checkbox-option {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 4px;
+            }
+          }
+          .password-field {
+            label {
+              font-weight: 800;
+            }
+          }
+          .choose-file {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+
+            label {
+              font-weight: 800;
+            }
+          }
+          .form-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+          }
+
+          .form-buttons button {
+            padding: 18px 32px;
+            border-radius: 3px;
+            font-weight: 400;
+            font-size: 0.8rem;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s ease-in-out;
+            margin-bottom: 20px;
+          }
+
+          .form-buttons .submit-button {
+            background-color: #ee227e;
+            color: white;
+          }
+
+          .form-buttons .submit-button:hover {
+            box-shadow: 0 0 10px rgba(251, 1, 113, 0.4);
+          }
+
+          .form-buttons .clear-button {
+            background-color: #e0e0e0;
+            color: rgb(74, 74, 87);
+          }
+
+          .form-buttons .clear-button:hover {
+            color: white;
+          }
+        }
+        .top-link {
+          line-height: 70px;
         }
       }
-    }
 
-    .lists {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      max-width: 685px;
-      width: 100%;
+      .table {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 685px;
+        width: 100%;
+        h1 {
+          margin-top: 40px;
+        }
+        .main-table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 20px;
+          font-size: 18px;
+          color: #4a4a57;
+        }
 
-      .section-title {
-        margin-top: 30px;
+        .main-table th,
+        .main-table td {
+          padding: 12px 16px;
+          text-align: left;
+          border-bottom: 1px solid #e0e0e0;
+        }
+
+        .main-table thead th {
+          font-weight: 600;
+          border-bottom: 2px solid #ccc;
+        }
       }
-
-      .list-subtitle {
-        font-weight: bold;
-      }
-
-      .ordered-list {
-        margin-left: 35px;
-      }
-      .unordered-list {
-        margin-left: 35px;
-      }
-    }
-
-    .forms {
-      margin-left: -30px;
-
-      .section-title {
-        margin-top: 30px;
-        margin-bottom: 30px;
-      }
-
-      .form-legend {
-        font-size: 23px;
-      }
-      .form-field {
+      .stuff {
         display: flex;
         flex-direction: column;
         gap: 30px;
         max-width: 685px;
         width: 100%;
 
-        .form-heading {
-          margin-top: 20px;
-          margin-bottom: 20px;
+        .section-title {
+          margin-top: 30px;
         }
-        input[type="text"],
-        textarea {
-          width: 100%;
-          border: none;
-          border-bottom: 1px solid #ccc;
-          background: transparent;
-          padding: 10px 5px;
+
+        .stuff-paragraph {
+          font-size: 20px;
+
+          .dotted-underline {
+            text-decoration: underline dotted;
+          }
+        }
+
+        .scroll-box {
+          overflow-x: auto;
+          white-space: nowrap;
+          background-color: #f2f2f2;
+          padding: 16px;
+          border-radius: 6px;
+          font-family: sans-serif;
           font-size: 14px;
-          color: rgb(74, 74, 87);
-          outline: none;
-
-          &:focus {
-            border-bottom: 1px solid #ee227e;
-          }
-        }
-        select {
-          padding: 15px 5px;
-          font-size: 18px;
-        }
-        .radio-buttons {
-          display: flex;
-          flex-direction: column;
-          gap: 15px;
-
-          .radio-option {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 4px;
-          }
-        }
-        .check-boxes {
-          display: flex;
-          flex-direction: column;
-          gap: 15px;
-
-          .checkbox-option {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 4px;
-          }
-        }
-        .password-field {
-          label {
-            font-weight: 800;
-          }
-        }
-        .choose-file {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 10px;
-
-          label {
-            font-weight: 800;
-          }
-        }
-        .form-buttons {
-          display: flex;
-          gap: 15px;
-          margin-top: 20px;
+          border: 1px solid #ccc;
         }
 
-        .form-buttons button {
-          padding: 18px 32px;
-          border-radius: 3px;
-          font-weight: 400;
-          font-size: 0.8rem;
-          cursor: pointer;
-          border: none;
-          transition: all 0.2s ease-in-out;
-          margin-bottom: 20px;
+        .quote-box {
+          border-left: 4px solid #d3d3d3;
+          padding-left: 16px;
+          margin: 20px 0;
+          color: #555;
+          font-style: italic;
+          font-size: 20px;
         }
 
-        .form-buttons .submit-button {
-          background-color: #ee227e;
-          color: white;
+        .quote-text {
+          margin-bottom: 10px;
         }
 
-        .form-buttons .submit-button:hover {
-          box-shadow: 0 0 10px rgba(251, 1, 113, 0.4);
+        .quote-author {
+          margin: 0;
+          font-style: normal;
+          color: #777;
         }
-
-        .form-buttons .clear-button {
-          background-color: #e0e0e0;
-          color: rgb(74, 74, 87);
+        .top-link {
+          margin-bottom: 40px;
         }
+        .categories {
+          a {
+            background-color: #ee227e;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 30px;
+            font-weight: 400;
+            font-size: 0.8rem;
+            text-decoration: none;
 
-        .form-buttons .clear-button:hover {
-          color: white;
-        }
-      }
-      .top-link {
-        line-height: 70px;
-      }
-    }
-
-    .table {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      max-width: 685px;
-      width: 100%;
-      h1 {
-        margin-top: 40px;
-      }
-      .main-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-        font-size: 18px;
-        color: #4a4a57;
-      }
-
-      .main-table th,
-      .main-table td {
-        padding: 12px 16px;
-        text-align: left;
-        border-bottom: 1px solid #e0e0e0;
-      }
-
-      .main-table thead th {
-        font-weight: 600;
-        border-bottom: 2px solid #ccc;
-      }
-    }
-    .stuff {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      max-width: 685px;
-      width: 100%;
-
-      .section-title {
-        margin-top: 30px;
-      }
-
-      .stuff-paragraph {
-        font-size: 20px;
-
-        .dotted-underline {
-          text-decoration: underline dotted;
-        }
-      }
-
-      .scroll-box {
-        overflow-x: auto;
-        white-space: nowrap;
-        background-color: #f2f2f2;
-        padding: 16px;
-        border-radius: 6px;
-        font-family: sans-serif;
-        font-size: 14px;
-        border: 1px solid #ccc;
-      }
-
-      .quote-box {
-        border-left: 4px solid #d3d3d3;
-        padding-left: 16px;
-        margin: 20px 0;
-        color: #555;
-        font-style: italic;
-        font-size: 20px;
-      }
-
-      .quote-text {
-        margin-bottom: 10px;
-      }
-
-      .quote-author {
-        margin: 0;
-        font-style: normal;
-        color: #777;
-      }
-      .top-link {
-        margin-bottom: 40px;
-      }
-      .categories {
-        a {
-          background-color: #ee227e;
-          color: white;
-          padding: 5px 15px;
-          border-radius: 30px;
-          font-weight: 400;
-          font-size: 0.8rem;
-          text-decoration: none;
-
-          &:hover {
-            box-shadow: 0 0 10px rgba(251, 1, 113, 0.4);
+            &:hover {
+              box-shadow: 0 0 10px rgba(251, 1, 113, 0.4);
+            }
           }
         }
       }
@@ -446,6 +453,8 @@ $lightergray: rgb(173, 173, 173);
         display: flex;
         justify-content: flex-end;
         gap: 10px;
+        padding: 40px 20px;
+        margin-left: 500px;
 
         div {
           width: 50px;
@@ -474,37 +483,103 @@ $lightergray: rgb(173, 173, 173);
       }
     }
   }
-  footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(42, 42, 42);
-    color: lightgray;
-    padding: 40px;
-    font-size: 14px;
+  .related-posts {
+    padding: 60px 20px;
+    text-align: center;
 
-    a {
-      color: lightgray;
-      text-decoration: none;
-      margin-right: 20px;
+    h1 {
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
 
-      &:hover {
-        color: rgba(255, 255, 255, 0.6);
-        transition: 0.2s ease-in;
+    .post-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+
+      .post-box {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 260px;
+        text-align: left;
+      }
+
+      .category1 {
+        font-size: 12px;
+        font-weight: 200;
+        color: rgb(133, 0, 133);
+        margin-bottom: 10px;
+      }
+      .category2 {
+        font-size: 12px;
+        font-weight: 200;
+        color: rgb(15, 214, 225);
+        margin-bottom: 10px;
+      }
+      .category3 {
+        font-size: 12px;
+        font-weight: 200;
+        color: rgb(255, 47, 0);
+        margin-bottom: 10px;
       }
     }
+  }
 
-    .footer-links {
-      display: flex;
-      gap: 20px;
-      font-size: 12px;
-    }
+  .post-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: $darkgray;
+    margin-bottom: 10px;
+  }
 
-    p {
-      margin: 0;
+  .post-summary {
+    font-size: 14px;
+    color: #777;
+
+    a {
+      color: rgb(31, 71, 130);
+      text-decoration: none;
+      &:hover {
+        color: rgb(236, 19, 116);
+      }
     }
   }
 }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(42, 42, 42);
+  color: lightgray;
+  padding: 40px;
+  font-size: 14px;
+
+  a {
+    color: lightgray;
+    text-decoration: none;
+    margin-right: 20px;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.6);
+      transition: 0.2s ease-in;
+    }
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 20px;
+    font-size: 12px;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .page-container {
     header {

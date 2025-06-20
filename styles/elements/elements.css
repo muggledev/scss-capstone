@@ -112,111 +112,120 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: white;
-  border-radius: 8px;
-  width: 97.5%;
+  width: 100%;
   margin: 0 auto;
   margin-top: -60px;
   color: rgb(74, 74, 87);
+  padding-left: 0;
+  padding-right: 0;
 }
-.page-container .main-container .content .description {
+.page-container .main-container .white-content {
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 97.5%;
+}
+.page-container .main-container .white-content .content .description {
   font-size: 20px;
   font-weight: 200;
   margin-top: 90px;
   max-width: 900px;
   width: 100%;
 }
-.page-container .main-container .content .divider-sm {
+.page-container .main-container .white-content .content .divider-sm {
   border: none;
   height: 1px;
   background-color: #d7d7d7;
   margin: 20px 0;
 }
-.page-container .main-container .content .headings-list {
+.page-container .main-container .white-content .content .headings-list {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 25px;
 }
-.page-container .main-container .content .headings-list .top-link {
+.page-container .main-container .white-content .content .headings-list .top-link {
   color: #ee227e;
 }
-.page-container .main-container .content .headings-list .top-link:hover {
+.page-container .main-container .white-content .content .headings-list .top-link:hover {
   color: rgb(255, 79, 158);
   transition: 0.2s ease-in;
 }
-.page-container .main-container .paragraph {
+.page-container .main-container .white-content .paragraph {
   max-width: 685px;
   width: 100%;
 }
-.page-container .main-container .paragraph .section-title {
+.page-container .main-container .white-content .paragraph .section-title {
   padding: 20px 0;
   font-size: 40px;
 }
-.page-container .main-container .paragraph p {
+.page-container .main-container .white-content .paragraph p {
   font-size: 20px;
 }
-.page-container .main-container .paragraph .test-link {
+.page-container .main-container .white-content .paragraph .test-link {
   color: #ee227e;
   text-decoration: none;
 }
-.page-container .main-container .paragraph .test-link:hover {
+.page-container .main-container .white-content .paragraph .test-link:hover {
   color: rgb(255, 79, 158);
   transition: 0.2s ease-in;
 }
-.page-container .main-container .paragraph .top-link {
+.page-container .main-container .white-content .paragraph .top-link {
   color: #ee227e;
   text-decoration: none;
   font-size: 15px;
   line-height: 50px;
 }
-.page-container .main-container .paragraph .top-link:hover {
+.page-container .main-container .white-content .paragraph .top-link:hover {
   color: rgb(255, 79, 158);
   transition: 0.2s ease-in;
 }
-.page-container .main-container .lists {
+.page-container .main-container .white-content .lists {
   display: flex;
   flex-direction: column;
   gap: 20px;
   max-width: 685px;
   width: 100%;
 }
-.page-container .main-container .lists .section-title {
+.page-container .main-container .white-content .lists .section-title {
   margin-top: 30px;
 }
-.page-container .main-container .lists .list-subtitle {
+.page-container .main-container .white-content .lists .list-subtitle {
   font-weight: bold;
 }
-.page-container .main-container .lists .ordered-list {
+.page-container .main-container .white-content .lists .ordered-list {
   margin-left: 35px;
 }
-.page-container .main-container .lists .unordered-list {
+.page-container .main-container .white-content .lists .unordered-list {
   margin-left: 35px;
 }
-.page-container .main-container .forms {
+.page-container .main-container .white-content .forms {
   margin-left: -30px;
 }
-.page-container .main-container .forms .section-title {
+.page-container .main-container .white-content .forms .section-title {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.page-container .main-container .forms .form-legend {
+.page-container .main-container .white-content .forms .form-legend {
   font-size: 23px;
 }
-.page-container .main-container .forms .form-field {
+.page-container .main-container .white-content .forms .form-field {
   display: flex;
   flex-direction: column;
   gap: 30px;
   max-width: 685px;
   width: 100%;
 }
-.page-container .main-container .forms .form-field .form-heading {
+.page-container .main-container .white-content .forms .form-field .form-heading {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.page-container .main-container .forms .form-field input[type=text],
-.page-container .main-container .forms .form-field textarea {
+.page-container .main-container .white-content .forms .form-field input[type=text],
+.page-container .main-container .white-content .forms .form-field textarea {
   width: 100%;
   border: none;
   border-bottom: 1px solid #ccc;
@@ -226,54 +235,54 @@
   color: rgb(74, 74, 87);
   outline: none;
 }
-.page-container .main-container .forms .form-field input[type=text]:focus,
-.page-container .main-container .forms .form-field textarea:focus {
+.page-container .main-container .white-content .forms .form-field input[type=text]:focus,
+.page-container .main-container .white-content .forms .form-field textarea:focus {
   border-bottom: 1px solid #ee227e;
 }
-.page-container .main-container .forms .form-field select {
+.page-container .main-container .white-content .forms .form-field select {
   padding: 15px 5px;
   font-size: 18px;
 }
-.page-container .main-container .forms .form-field .radio-buttons {
+.page-container .main-container .white-content .forms .form-field .radio-buttons {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.page-container .main-container .forms .form-field .radio-buttons .radio-option {
+.page-container .main-container .white-content .forms .form-field .radio-buttons .radio-option {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 4px;
 }
-.page-container .main-container .forms .form-field .check-boxes {
+.page-container .main-container .white-content .forms .form-field .check-boxes {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.page-container .main-container .forms .form-field .check-boxes .checkbox-option {
+.page-container .main-container .white-content .forms .form-field .check-boxes .checkbox-option {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 4px;
 }
-.page-container .main-container .forms .form-field .password-field label {
+.page-container .main-container .white-content .forms .form-field .password-field label {
   font-weight: 800;
 }
-.page-container .main-container .forms .form-field .choose-file {
+.page-container .main-container .white-content .forms .form-field .choose-file {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
 }
-.page-container .main-container .forms .form-field .choose-file label {
+.page-container .main-container .white-content .forms .form-field .choose-file label {
   font-weight: 800;
 }
-.page-container .main-container .forms .form-field .form-buttons {
+.page-container .main-container .white-content .forms .form-field .form-buttons {
   display: flex;
   gap: 15px;
   margin-top: 20px;
 }
-.page-container .main-container .forms .form-field .form-buttons button {
+.page-container .main-container .white-content .forms .form-field .form-buttons button {
   padding: 18px 32px;
   border-radius: 3px;
   font-weight: 400;
@@ -283,68 +292,68 @@
   transition: all 0.2s ease-in-out;
   margin-bottom: 20px;
 }
-.page-container .main-container .forms .form-field .form-buttons .submit-button {
+.page-container .main-container .white-content .forms .form-field .form-buttons .submit-button {
   background-color: #ee227e;
   color: white;
 }
-.page-container .main-container .forms .form-field .form-buttons .submit-button:hover {
+.page-container .main-container .white-content .forms .form-field .form-buttons .submit-button:hover {
   box-shadow: 0 0 10px rgba(251, 1, 113, 0.4);
 }
-.page-container .main-container .forms .form-field .form-buttons .clear-button {
+.page-container .main-container .white-content .forms .form-field .form-buttons .clear-button {
   background-color: #e0e0e0;
   color: rgb(74, 74, 87);
 }
-.page-container .main-container .forms .form-field .form-buttons .clear-button:hover {
+.page-container .main-container .white-content .forms .form-field .form-buttons .clear-button:hover {
   color: white;
 }
-.page-container .main-container .forms .top-link {
+.page-container .main-container .white-content .forms .top-link {
   line-height: 70px;
 }
-.page-container .main-container .table {
+.page-container .main-container .white-content .table {
   display: flex;
   flex-direction: column;
   gap: 30px;
   max-width: 685px;
   width: 100%;
 }
-.page-container .main-container .table h1 {
+.page-container .main-container .white-content .table h1 {
   margin-top: 40px;
 }
-.page-container .main-container .table .main-table {
+.page-container .main-container .white-content .table .main-table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
   font-size: 18px;
   color: #4a4a57;
 }
-.page-container .main-container .table .main-table th,
-.page-container .main-container .table .main-table td {
+.page-container .main-container .white-content .table .main-table th,
+.page-container .main-container .white-content .table .main-table td {
   padding: 12px 16px;
   text-align: left;
   border-bottom: 1px solid #e0e0e0;
 }
-.page-container .main-container .table .main-table thead th {
+.page-container .main-container .white-content .table .main-table thead th {
   font-weight: 600;
   border-bottom: 2px solid #ccc;
 }
-.page-container .main-container .stuff {
+.page-container .main-container .white-content .stuff {
   display: flex;
   flex-direction: column;
   gap: 30px;
   max-width: 685px;
   width: 100%;
 }
-.page-container .main-container .stuff .section-title {
+.page-container .main-container .white-content .stuff .section-title {
   margin-top: 30px;
 }
-.page-container .main-container .stuff .stuff-paragraph {
+.page-container .main-container .white-content .stuff .stuff-paragraph {
   font-size: 20px;
 }
-.page-container .main-container .stuff .stuff-paragraph .dotted-underline {
+.page-container .main-container .white-content .stuff .stuff-paragraph .dotted-underline {
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
 }
-.page-container .main-container .stuff .scroll-box {
+.page-container .main-container .white-content .stuff .scroll-box {
   overflow-x: auto;
   white-space: nowrap;
   background-color: #f2f2f2;
@@ -354,7 +363,7 @@
   font-size: 14px;
   border: 1px solid #ccc;
 }
-.page-container .main-container .stuff .quote-box {
+.page-container .main-container .white-content .stuff .quote-box {
   border-left: 4px solid #d3d3d3;
   padding-left: 16px;
   margin: 20px 0;
@@ -362,18 +371,18 @@
   font-style: italic;
   font-size: 20px;
 }
-.page-container .main-container .stuff .quote-text {
+.page-container .main-container .white-content .stuff .quote-text {
   margin-bottom: 10px;
 }
-.page-container .main-container .stuff .quote-author {
+.page-container .main-container .white-content .stuff .quote-author {
   margin: 0;
   font-style: normal;
   color: #777;
 }
-.page-container .main-container .stuff .top-link {
+.page-container .main-container .white-content .stuff .top-link {
   margin-bottom: 40px;
 }
-.page-container .main-container .stuff .categories a {
+.page-container .main-container .white-content .stuff .categories a {
   background-color: #ee227e;
   color: white;
   padding: 5px 15px;
@@ -382,15 +391,17 @@
   font-size: 0.8rem;
   text-decoration: none;
 }
-.page-container .main-container .stuff .categories a:hover {
+.page-container .main-container .white-content .stuff .categories a:hover {
   box-shadow: 0 0 10px rgba(251, 1, 113, 0.4);
 }
-.page-container .main-container .stuff .brand-icons {
+.page-container .main-container .white-content .brand-icons {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
+  padding: 40px 20px;
+  margin-left: 500px;
 }
-.page-container .main-container .stuff .brand-icons div {
+.page-container .main-container .white-content .brand-icons div {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -399,19 +410,77 @@
   justify-content: center;
   font-size: 20px;
 }
-.page-container .main-container .stuff .brand-icons .facebook {
+.page-container .main-container .white-content .brand-icons .facebook {
   background-color: #3b5998;
   color: white;
 }
-.page-container .main-container .stuff .brand-icons .twitter {
+.page-container .main-container .white-content .brand-icons .twitter {
   background-color: black;
   color: white;
 }
-.page-container .main-container .stuff .brand-icons .email {
+.page-container .main-container .white-content .brand-icons .email {
   background-color: #d3d3d3;
   color: white;
 }
-.page-container footer {
+.page-container .related-posts {
+  padding: 60px 20px;
+  text-align: center;
+}
+.page-container .related-posts h1 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+.page-container .related-posts .post-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.page-container .related-posts .post-container .post-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 260px;
+  text-align: left;
+}
+.page-container .related-posts .post-container .category1 {
+  font-size: 12px;
+  font-weight: 200;
+  color: rgb(133, 0, 133);
+  margin-bottom: 10px;
+}
+.page-container .related-posts .post-container .category2 {
+  font-size: 12px;
+  font-weight: 200;
+  color: rgb(15, 214, 225);
+  margin-bottom: 10px;
+}
+.page-container .related-posts .post-container .category3 {
+  font-size: 12px;
+  font-weight: 200;
+  color: rgb(255, 47, 0);
+  margin-bottom: 10px;
+}
+.page-container .post-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(74, 74, 87);
+  margin-bottom: 10px;
+}
+.page-container .post-summary {
+  font-size: 14px;
+  color: #777;
+}
+.page-container .post-summary a {
+  color: rgb(31, 71, 130);
+  text-decoration: none;
+}
+.page-container .post-summary a:hover {
+  color: rgb(236, 19, 116);
+}
+
+footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -420,21 +489,21 @@
   padding: 40px;
   font-size: 14px;
 }
-.page-container footer a {
+footer a {
   color: lightgray;
   text-decoration: none;
   margin-right: 20px;
 }
-.page-container footer a:hover {
+footer a:hover {
   color: rgba(255, 255, 255, 0.6);
   transition: 0.2s ease-in;
 }
-.page-container footer .footer-links {
+footer .footer-links {
   display: flex;
   gap: 20px;
   font-size: 12px;
 }
-.page-container footer p {
+footer p {
   margin: 0;
 }
 
