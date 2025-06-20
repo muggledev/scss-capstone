@@ -19,10 +19,18 @@ $lightergray: rgb(173, 173, 173);
   background-color: rgba(0, 0, 0, 0.2);
 
   header {
+    width: 100%;
+    background-color: white;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
     .navbar {
-      background-color: white;
-      padding: 20px 55px;
+      margin: 0 auto;
+      width: 80%;
+      height: 100%;
       @include flexbox(row, space-between, center);
+      align-items: center;
 
       .hestia a {
         color: #686868;
@@ -89,7 +97,7 @@ $lightergray: rgb(173, 173, 173);
     font-size: x-large;
     @include flexbox();
     color: white;
-    padding: 160px;
+    padding: 190px;
   }
 
   // **************MAIN CONTAINER****************
@@ -490,6 +498,60 @@ $lightergray: rgb(173, 173, 173);
 
     p {
       margin: 0;
+    }
+  }
+}
+// Responsive design for screens smaller than 768px
+@media (max-width: 768px) {
+  .page-container {
+    header {
+      height: auto;
+
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 10px;
+        gap: 15px;
+
+        nav {
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+    }
+
+    .hero-text {
+      padding: 100px 20px;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .main-container {
+      width: 95%;
+      margin-top: -30px;
+
+      .main-text {
+        .thousand-words,
+        .elements,
+        .more-tags,
+        .html,
+        .links,
+        .category-hierarchy,
+        .hello-world {
+          padding: 50px 20px 0 20px;
+        }
+      }
+    }
+
+    footer {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+
+      .footer-links {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
     }
   }
 }

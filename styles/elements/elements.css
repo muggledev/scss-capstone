@@ -16,12 +16,22 @@
 .page-container {
   background-color: rgba(0, 0, 0, 0.2);
 }
-.page-container header .navbar {
+.page-container header {
+  width: 100%;
   background-color: white;
-  padding: 20px 55px;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+}
+.page-container header .navbar {
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   align-items: center;
 }
 .page-container header .navbar .hestia a {
@@ -76,7 +86,7 @@
   justify-content: center;
   align-items: center;
   color: white;
-  padding: 160px;
+  padding: 190px;
   text-align: center;
 }
 .page-container .hero-text h1 {
@@ -159,6 +169,7 @@
   color: #ee227e;
   text-decoration: none;
   font-size: 15px;
+  line-height: 50px;
 }
 .page-container .main-container .paragraph .top-link:hover {
   color: rgb(255, 79, 158);
@@ -171,25 +182,41 @@
   max-width: 685px;
   width: 100%;
 }
+.page-container .main-container .lists .section-title {
+  margin-top: 30px;
+}
+.page-container .main-container .lists .list-subtitle {
+  font-weight: bold;
+}
 .page-container .main-container .lists .ordered-list {
   margin-left: 35px;
 }
 .page-container .main-container .lists .unordered-list {
   margin-left: 35px;
 }
-.page-container .main-container .form-field {
+.page-container .main-container .forms {
+  margin-left: -30px;
+}
+.page-container .main-container .forms .section-title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.page-container .main-container .forms .form-legend {
+  font-size: 23px;
+}
+.page-container .main-container .forms .form-field {
   display: flex;
   flex-direction: column;
   gap: 30px;
   max-width: 685px;
   width: 100%;
 }
-.page-container .main-container .form-field .form-heading {
+.page-container .main-container .forms .form-field .form-heading {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.page-container .main-container .form-field input[type=text],
-.page-container .main-container .form-field textarea {
+.page-container .main-container .forms .form-field input[type=text],
+.page-container .main-container .forms .form-field textarea {
   width: 100%;
   border: none;
   border-bottom: 1px solid #ccc;
@@ -199,54 +226,54 @@
   color: rgb(74, 74, 87);
   outline: none;
 }
-.page-container .main-container .form-field input[type=text]:focus,
-.page-container .main-container .form-field textarea:focus {
+.page-container .main-container .forms .form-field input[type=text]:focus,
+.page-container .main-container .forms .form-field textarea:focus {
   border-bottom: 1px solid #ee227e;
 }
-.page-container .main-container .form-field select {
+.page-container .main-container .forms .form-field select {
   padding: 15px 5px;
   font-size: 18px;
 }
-.page-container .main-container .form-field .radio-buttons {
+.page-container .main-container .forms .form-field .radio-buttons {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.page-container .main-container .form-field .radio-buttons .radio-option {
+.page-container .main-container .forms .form-field .radio-buttons .radio-option {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 4px;
 }
-.page-container .main-container .form-field .check-boxes {
+.page-container .main-container .forms .form-field .check-boxes {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.page-container .main-container .form-field .check-boxes .checkbox-option {
+.page-container .main-container .forms .form-field .check-boxes .checkbox-option {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 4px;
 }
-.page-container .main-container .form-field .password-field label {
+.page-container .main-container .forms .form-field .password-field label {
   font-weight: 800;
 }
-.page-container .main-container .form-field .choose-file {
+.page-container .main-container .forms .form-field .choose-file {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
 }
-.page-container .main-container .form-field .choose-file label {
+.page-container .main-container .forms .form-field .choose-file label {
   font-weight: 800;
 }
-.page-container .main-container .form-field .form-buttons {
+.page-container .main-container .forms .form-field .form-buttons {
   display: flex;
   gap: 15px;
   margin-top: 20px;
 }
-.page-container .main-container .form-field .form-buttons button {
+.page-container .main-container .forms .form-field .form-buttons button {
   padding: 18px 32px;
   border-radius: 3px;
   font-weight: 400;
@@ -256,19 +283,22 @@
   transition: all 0.2s ease-in-out;
   margin-bottom: 20px;
 }
-.page-container .main-container .form-field .form-buttons .submit-button {
+.page-container .main-container .forms .form-field .form-buttons .submit-button {
   background-color: #ee227e;
   color: white;
 }
-.page-container .main-container .form-field .form-buttons .submit-button:hover {
+.page-container .main-container .forms .form-field .form-buttons .submit-button:hover {
   box-shadow: 0 0 10px rgba(251, 1, 113, 0.4);
 }
-.page-container .main-container .form-field .form-buttons .clear-button {
+.page-container .main-container .forms .form-field .form-buttons .clear-button {
   background-color: #e0e0e0;
   color: rgb(74, 74, 87);
 }
-.page-container .main-container .form-field .form-buttons .clear-button:hover {
+.page-container .main-container .forms .form-field .form-buttons .clear-button:hover {
   color: white;
+}
+.page-container .main-container .forms .top-link {
+  line-height: 70px;
 }
 .page-container .main-container .table {
   display: flex;
@@ -304,8 +334,15 @@
   max-width: 685px;
   width: 100%;
 }
+.page-container .main-container .stuff .section-title {
+  margin-top: 30px;
+}
 .page-container .main-container .stuff .stuff-paragraph {
   font-size: 20px;
+}
+.page-container .main-container .stuff .stuff-paragraph .dotted-underline {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 .page-container .main-container .stuff .scroll-box {
   overflow-x: auto;
@@ -335,4 +372,106 @@
 }
 .page-container .main-container .stuff .top-link {
   margin-bottom: 40px;
+}
+.page-container .main-container .stuff .categories a {
+  background-color: #ee227e;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+.page-container .main-container .stuff .categories a:hover {
+  box-shadow: 0 0 10px rgba(251, 1, 113, 0.4);
+}
+.page-container .main-container .stuff .brand-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.page-container .main-container .stuff .brand-icons div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.page-container .main-container .stuff .brand-icons .facebook {
+  background-color: #3b5998;
+  color: white;
+}
+.page-container .main-container .stuff .brand-icons .twitter {
+  background-color: black;
+  color: white;
+}
+.page-container .main-container .stuff .brand-icons .email {
+  background-color: #d3d3d3;
+  color: white;
+}
+.page-container footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(42, 42, 42);
+  color: lightgray;
+  padding: 40px;
+  font-size: 14px;
+}
+.page-container footer a {
+  color: lightgray;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.page-container footer a:hover {
+  color: rgba(255, 255, 255, 0.6);
+  transition: 0.2s ease-in;
+}
+.page-container footer .footer-links {
+  display: flex;
+  gap: 20px;
+  font-size: 12px;
+}
+.page-container footer p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .page-container header .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+  }
+  .page-container header nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .page-container .hero-text {
+    padding: 100px 20px;
+    font-size: 1.2rem;
+  }
+  .page-container .main-container {
+    width: 95%;
+    margin-top: -40px;
+    padding: 0 10px;
+  }
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    font-size: 12px;
+  }
+  footer .footer-links {
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 12px;
+  }
+  footer p {
+    margin-top: 10px;
+  }
 }/*# sourceMappingURL=elements.css.map */
