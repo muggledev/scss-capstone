@@ -5,73 +5,6 @@
 }
 
 .page-container {
-  header {
-    .navbar {
-      background-color: white;
-      padding: 20px 55px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      .hestia a {
-        color: #686868;
-        font-weight: 400;
-        font-size: 1.2rem;
-        text-decoration: none;
-
-        &:hover {
-          color: #999898;
-          transition: 0.2s ease-in;
-        }
-      }
-
-      nav {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-
-        .nav-label {
-          a {
-            text-decoration: none;
-            font-weight: 400;
-            font-size: 0.8rem;
-            padding: 10px 15px;
-            display: inline-block;
-            border-radius: 3px;
-            color: #686868;
-
-            &:hover {
-              color: rgb(255, 79, 158);
-              transition: 0.2s ease-in;
-            }
-          }
-
-          &:nth-child(3) a {
-            color: #ee227e;
-          }
-
-          &:nth-child(3) a:hover {
-            color: rgb(255, 79, 158);
-            transition: 0.2s ease-in;
-          }
-        }
-
-        .more-link {
-          background-color: #ee227e;
-          color: white;
-          padding: 18px 22px;
-          border-radius: 30px;
-          font-weight: 400;
-          font-size: 0.8rem;
-          text-decoration: none;
-
-          &:hover {
-            box-shadow: 0 0 10px rgba(251, 1, 113, 0.4);
-          }
-        }
-      }
-    }
-  }
   main {
     .contact-grid {
       display: grid;
@@ -215,33 +148,44 @@
       }
     }
   }
-  footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(42, 42, 42);
-    color: lightgray;
-    padding: 40px;
-    font-size: 13px;
+}
+@media (max-width: 768px) {
+  .page-container {
+    main {
+      padding-bottom: 30px;
+      .contact-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        width: 100%;
+        padding: 0;
 
-    a {
-      color: lightgray;
-      text-decoration: none;
-      margin-right: 20px;
+        h1 {
+          width: 100%;
+          text-align: center;
+        }
 
-      &:hover {
-        color: rgba(255, 255, 255, 0.6);
-        transition: 0.2s ease-in;
+        .form {
+          align-items: center;
+          width: 100%;
+
+          .input-wrapper {
+            width: 80%;
+          }
+          input[type="submit"] {
+            align-self: inherit;
+          }
+        }
+        .contact-info {
+          margin: 0;
+
+          .map,
+          .phone,
+          .brief-case {
+            width: 55%;
+          }
+        }
       }
-    }
-
-    .footer-links {
-      display: flex;
-      gap: 20px;
-    }
-
-    p {
-      margin: 0;
     }
   }
 }

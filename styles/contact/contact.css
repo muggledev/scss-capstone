@@ -4,60 +4,6 @@
   font-family: "Alumni Sans", sans-serif;
 }
 
-.page-container header .navbar {
-  background-color: white;
-  padding: 20px 55px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.page-container header .navbar .hestia a {
-  color: #686868;
-  font-weight: 400;
-  font-size: 1.2rem;
-  text-decoration: none;
-}
-.page-container header .navbar .hestia a:hover {
-  color: #999898;
-  transition: 0.2s ease-in;
-}
-.page-container header .navbar nav {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.page-container header .navbar nav .nav-label a {
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 0.8rem;
-  padding: 10px 15px;
-  display: inline-block;
-  border-radius: 3px;
-  color: #686868;
-}
-.page-container header .navbar nav .nav-label a:hover {
-  color: rgb(255, 79, 158);
-  transition: 0.2s ease-in;
-}
-.page-container header .navbar nav .nav-label:nth-child(3) a {
-  color: #ee227e;
-}
-.page-container header .navbar nav .nav-label:nth-child(3) a:hover {
-  color: rgb(255, 79, 158);
-  transition: 0.2s ease-in;
-}
-.page-container header .navbar nav .more-link {
-  background-color: #ee227e;
-  color: white;
-  padding: 18px 22px;
-  border-radius: 30px;
-  font-weight: 400;
-  font-size: 0.8rem;
-  text-decoration: none;
-}
-.page-container header .navbar nav .more-link:hover {
-  box-shadow: 0 0 10px rgba(251, 1, 113, 0.4);
-}
 .page-container main .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -193,28 +139,38 @@
   line-height: 1.4;
   padding-left: 0;
 }
-.page-container footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(42, 42, 42);
-  color: lightgray;
-  padding: 40px;
-  font-size: 13px;
-}
-.page-container footer a {
-  color: lightgray;
-  text-decoration: none;
-  margin-right: 20px;
-}
-.page-container footer a:hover {
-  color: rgba(255, 255, 255, 0.6);
-  transition: 0.2s ease-in;
-}
-.page-container footer .footer-links {
-  display: flex;
-  gap: 20px;
-}
-.page-container footer p {
-  margin: 0;
+
+@media (max-width: 768px) {
+  .page-container main {
+    padding-bottom: 30px;
+  }
+  .page-container main .contact-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  .page-container main .contact-grid h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .page-container main .contact-grid .form {
+    align-items: center;
+    width: 100%;
+  }
+  .page-container main .contact-grid .form .input-wrapper {
+    width: 80%;
+  }
+  .page-container main .contact-grid .form input[type=submit] {
+    align-self: inherit;
+  }
+  .page-container main .contact-grid .contact-info {
+    margin: 0;
+  }
+  .page-container main .contact-grid .contact-info .map,
+  .page-container main .contact-grid .contact-info .phone,
+  .page-container main .contact-grid .contact-info .brief-case {
+    width: 55%;
+  }
 }/*# sourceMappingURL=contact.css.map */
