@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Alumni Sans", sans-serif;
+}
+
+.page-container {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.page-container .main-container {
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  border-radius: 8px;
+  width: 97.5%;
+  margin: 0 auto;
+  margin-top: -60px;
+}
+.page-container .main-container h1 {
+  text-align: center;
+  font-size: 50px;
+  padding: 30px;
+  margin-bottom: 70px;
+  color: rgb(74, 74, 87);
+}
+.page-container .main-container .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 130px;
+}
+.page-container .main-container .icons p {
+  color: rgb(173, 173, 173);
+  font-size: 19px;
+}
+.page-container .main-container .grid-overlay {
+  position: relative;
+  display: grid;
+  place-items: center;
+  background-image: url(../../assets/purple-mountains.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 80px 40px;
+  z-index: 0;
+}
+.page-container .main-container .grid-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.page-container .main-container .grid-overlay .grid-content {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+}
+.page-container .main-container .grid-overlay .grid-content .text-block h2 {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.page-container .main-container .grid-overlay .grid-content .text-block p {
+  color: white;
+  font-size: 23px;
+  line-height: 1.5;
+}
+.page-container .main-container .grid-overlay .grid-content img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.page-container .main-container .blog-section h1 {
+  text-align: center;
+  margin-top: 60px;
+}
+.page-container .main-container .blog-section .blog-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 120px;
+}
+.page-container .main-container .blog-section .blog-text .purple h2 {
+  color: rgb(133, 0, 133);
+  font-weight: 400;
+  font-size: larger;
+}
+.page-container .main-container .blog-section .blog-text .purple a {
+  text-decoration: none;
+  font-size: 27px;
+  font-weight: 600;
+  color: rgb(74, 74, 87);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.page-container .main-container .blog-section .blog-text .purple p {
+  font-size: 19px;
+  color: rgb(173, 173, 173);
+}
+.page-container .main-container .blog-section .blog-text .blue h2 {
+  color: rgb(15, 214, 225);
+  font-weight: 400;
+  font-size: larger;
+}
+.page-container .main-container .blog-section .blog-text .blue a {
+  text-decoration: none;
+  font-size: 27px;
+  font-weight: 600;
+  color: rgb(74, 74, 87);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.page-container .main-container .blog-section .blog-text .blue p {
+  font-size: 19px;
+  color: rgb(173, 173, 173);
+}
+.page-container .main-container .blog-section .blog-text .blue p a {
+  font-size: 19px;
+  font-weight: 400;
+  color: rgb(31, 71, 130);
+  line-height: 0;
+}
+.page-container .main-container .blog-section .blog-text .red-orange h2 {
+  color: rgb(255, 47, 0);
+  font-weight: 400;
+  font-size: larger;
+}
+.page-container .main-container .blog-section .blog-text .red-orange a {
+  text-decoration: none;
+  font-size: 27px;
+  font-weight: 600;
+  color: rgb(74, 74, 87);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.page-container .main-container .blog-section .blog-text .red-orange p {
+  font-size: 19px;
+  color: rgb(173, 173, 173);
+}
+.page-container .main-container .contact-info {
+  position: relative;
+  background-image: url(../../assets/purple-mountains.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 40px;
+  z-index: 0;
+  overflow: hidden;
+}
+.page-container .main-container .contact-info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.page-container .main-container .contact-info > * {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: left;
+}
+.page-container .main-container .contact-info h1 {
+  margin-bottom: -10px;
+}
+.page-container .main-container .contact-info .info-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.page-container .main-container .contact-info .info-group i {
+  font-size: 35px;
+  margin-left: 30px;
+}
+.page-container .main-container .contact-info .info-group h2 {
+  margin: 0;
+  font-size: 24px;
+}
+.page-container .main-container .contact-info p {
+  font-size: 18px;
+  margin-top: 12px;
+  margin-left: 65px;
+}
+
+@media (max-width: 768px) {
+  .page-container main .main-container .page-description .icons {
+    flex-direction: column;
+  }
+  .page-container main .main-container .page-description .grid-overlay .grid-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+  }
+  .page-container main .main-container .blog-section .blog-text {
+    flex-direction: column;
+    text-align: center;
+  }
+}/*# sourceMappingURL=home.css.map */
